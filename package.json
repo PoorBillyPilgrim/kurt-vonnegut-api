@@ -1,0 +1,37 @@
+{
+  "name": "kurt-vonnegut-api",
+  "version": "1.0.0",
+  "description": "A Kurt Vonnegut API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PoorBillyPilgrim/kurt-vonnegut-api.git"
+  },
+  "keywords": [
+    "Kurt",
+    "Vonnegut",
+    "API",
+    "bibliography"
+  ],
+  "author": "Tyler Jones",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/PoorBillyPilgrim/kurt-vonnegut-api/issues"
+  },
+  "homepage": "https://github.com/PoorBillyPilgrim/kurt-vonnegut-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "nodemon": "^2.0.4"
+  }
+}

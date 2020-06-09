@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Player Piano",
+        "form": "novel",
+        "genre": "science fiction",
+        "publisher": "Charles Scribner's Sons",
+        "year": 1952,
+        "pages": 296,
+        "isbn": 9780385333788,
+        "chapters": "",
+        "characters": 35,
+        "wiki": "https://en.wikipedia.org/wiki/Player_Piano_(novel)",
+        "film": "",
+        "musical": ""
+    },
+    {
+        "title": "",
+        "form": "",
+        "genre": "",
+        "publisher": "",
+        "year": 0,
+        "pages": 0,
+        "isbn": 0,
+        "chapters": "",
+        "characters": "",
+        "wiki": "",
+        "film": "",
+        "musical": ""
+    }
+]
