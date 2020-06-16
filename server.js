@@ -5,7 +5,7 @@ const cors = require('cors');
 const MongoClient = require('mongodb').MongoClient;
 
 
-// const books = require('./routes/api');
+const api = require('./routes/api');
 
 
 // Create express app
@@ -25,27 +25,15 @@ app.use(bodyParser.json());
 const url = 'mongodb://localhost:27017';
 
 
-/*
-// Passes the /books route to the app
-app.use('/books', books);
-*/
-var db;
-app.get('/books', (req, res) => {
-    db.collection('books').find({}).toArray((err, books) => {
-        if (err) {
-            return res.status(500).send(err);
-        }
-        res.send(books);
-    });
-});
+// Routes api through /api param
+app.use('/api', api);
 
-app.listen(port, () => {
-    console.log(`Listening on port ${port}. So it goes.`);
 
-    MongoClient.connect(url, function (err, client) {
-        // In mongo v.3.0.0+, you use client.db('dbName') to connect to your database
-        db = client.db('vonnegut');
-
-    });
-
-});
+MongoClient.connect(url, { useUnifiedTopology: true }).then(client => {
+    // In mongo v.3.0.0+, you use client.db('dbName') to connect to your database
+    const db = client.db('vonnegut');
+    const collection = db.collection('bibliography');
+    // app.locals.collection allows collection to persist throughout the entire app
+    app.locals.collection = collection;
+    app.listen(port, () => console.info(`Listening on port ${port}. So it goes.`));
+}).catch(err => console.error(err));
