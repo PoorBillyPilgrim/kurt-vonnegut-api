@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const fs = require('fs');
+// const fs = require('fs');
+const { catchErrors } = require('../handlers/errors.js');
 
 /* reading from json file in project
 let jsonData = {};
@@ -16,23 +17,34 @@ router.get('/books', (req, res) => {
     // req.app holds a reference to an instance of the Express application that is using the middleware
     // So app.locals.collection can be accessed in api.js using req.
     const collection = req.app.locals.collection;
+    /**
+     * I get an error when I have both res.send() for title and for all.
+     *     if (req.query.title) {
+        collection.find({ "title": req.query.title }).toArray((err, book) => {
+            if (err) {
+                res.status(500).send(err);
+            }
+            res.send(book);
+        });
+    }
+     * 
+     */
+
     collection.find({}).toArray((err, books) => {
         if (err) {
-            return res.status(500).send(err);
+            res.status(500).send(err);
         }
         res.send(books);
+
     });
 });
 
 // Returns document by title
-router.get('/books/:title', (req, res) => {
+router.get('/books/:title', catchErrors(async (req, res, next) => {
     const collection = req.app.locals.collection;
-    collection.find({ "title": req.params.title }).toArray((err, book) => {
-        if (err) {
-            return res.status(500).send(err);
-        }
+    collection.find({ "title": req.params.title }).toArray((book) => {
         res.send(book);
     })
-})
+}));
 
 module.exports = router;
