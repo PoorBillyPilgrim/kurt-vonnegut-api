@@ -1,37 +1,31 @@
 const express = require('express');
 const router = express.Router();
+const { getAll, getNovels, getCollections, getPlays } = require('../controllers/handleRoutes');
 
 
-router.get('/', async (req, res) => {
-    const collection = req.app.locals.collection;
+router.get('/', getAll);
 
-    await collection.find({}).toArray((err, bibliography) => {
-        if (err) {
-            res.status(500).send(err);
-        }
-        res.send(bibliography);
+router.get('/novels', getNovels);
+router.get('/collections', getCollections);
+router.get('/plays', getPlays);
+
+/** 
+    const { title, setting, year } = req.query;
+    /* For finding a specific city in the setting array
+    await collection.find({
+        'setting.city': { $eq: 'Midland City }
+    }).toArray((err, novels) => {
+        res.send(novels)
     });
-});
-
-
-router.get('/novels', async (req, res) => {
-    // req.app holds a reference to an instance of the Express application that is using the middleware
-    // So app.locals.collection can be accessed in api.js using req.
-    //const query = new URLSearchParams(req.query);
-    const collection = req.app.locals.collection;
-
-    await collection.find({ form: "novel" }).toArray((err, novels) => {
-        if (err) {
-            res.status(500).send(err);
-        }
-        res.send(novels);
+    
+    // For finding a single title (NOTE: will NOT return multiple from req.query.title)
+    await collection.find({
+        'title': { $eq: title }
+    }).toArray((err, novels) => {
+        res.send(novels)
     });
-    const { title, year } = req.query;
-    console.log(title);
-    console.log(parseInt(year));
+    */
 
-
-});
 
 // Returns document by title
 router.get('/novels/:title', async (req, res) => {
@@ -46,6 +40,7 @@ router.get('/novels/:title', async (req, res) => {
             res.send(novel);
         }
     })
+    console.log(req.query.setting)
 });
 
 module.exports = router;
