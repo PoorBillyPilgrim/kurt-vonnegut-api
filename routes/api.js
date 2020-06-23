@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const { getAll, getNovels, getCollections, getPlays } = require('../controllers/handleRoutes');
-
+const { catchAsyncErrors } = require('../handlers/errors')
 
 router.get('/', getAll);
 
-router.get('/novels', getNovels);
-router.get('/collections', getCollections);
-router.get('/plays', getPlays);
+router.get('/novels', catchAsyncErrors(getNovels));
+router.get('/collections', catchAsyncErrors(getCollections));
+router.get('/plays', catchAsyncErrors(getPlays));
 
 /** 
     const { title, setting, year } = req.query;
