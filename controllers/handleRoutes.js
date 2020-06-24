@@ -1,7 +1,6 @@
-// req.app references an instance of the Express application that is using the middleware
-// So app.locals.collection can be accessed in api.js using req.
-
 const getAll = async (req, res) => {
+    // req.app references an instance of the Express application that is using the middleware
+    // So app.locals.collection can be accessed in api.js using req.
     const collection = await req.app.locals.collection;
     await collection.find({}).toArray((err, bibliography) => {
         if (err) {
@@ -13,13 +12,33 @@ const getAll = async (req, res) => {
 }
 
 const getForm = async (req, res, form) => {
+    const { title, year, setting, firstName, lastName } = req.query;
     const collection = await req.app.locals.collection;
-    await collection.find({ 'form': form }).toArray((err, bibliography) => {
-        if (err) {
-            res.status(500).send(err);
-        }
-        res.send(bibliography);
-    });
+
+    if (title) {
+        await collection.find({ 'title': { $eq: title } }).toArray((err, item) => {
+            res.send(item)
+        });
+    } else if (year) {
+        let numYear = parseInt(year);
+        await collection.find({ 'year': { $eq: numYear } }).toArray((err, item) => {
+            res.send(item)
+        });
+    } else if (setting) {
+        await collection.find({
+            'setting.city': { $eq: setting }
+        }).toArray((err, item) => {
+            res.send(item)
+        });
+    } else {
+        await collection.find({ 'form': form }).toArray((err, bibliography) => {
+            if (err) {
+                res.status(500).send(err);
+            }
+            res.send(bibliography);
+        });
+    }
+
 }
 
 const getNovels = (req, res) => getForm(req, res, "novel");

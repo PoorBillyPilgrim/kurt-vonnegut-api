@@ -1,5 +1,4 @@
-
-
+// Create custom errors
 class AppError extends Error {
     constructor(message, statusCode) {
         super(message);
@@ -22,7 +21,7 @@ const handleErrors = (err, res) => {
     });
 }
 
-// Catch errors from async functions and pass them along to handleErrorss middleware
+// Catch errors from async functions and pass them along to handleErrors middleware
 const catchAsyncErrors = fn => (req, res, next) => fn(req, res, next).catch(next);
 
 

@@ -26,7 +26,6 @@ app.all('*', (req, res, next) => {
     next(new AppError(`Hmm, can't find ${req.originalUrl} on this server`, 404));
 });
 
-
 app.use((err, req, res, next) => {
     handleErrors(err, res);
 });

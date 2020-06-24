@@ -6,6 +6,8 @@ const { catchAsyncErrors } = require('../handlers/errors')
 router.get('/', getAll);
 
 router.get('/novels', catchAsyncErrors(getNovels));
+
+
 router.get('/collections', catchAsyncErrors(getCollections));
 router.get('/plays', catchAsyncErrors(getPlays));
 
