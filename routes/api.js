@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const { getAll, getNovels, getCollections, getPlays } = require('../controllers/handleRoutes');
-const { catchAsyncErrors } = require('../handlers/errors')
+const { catchAsyncErrors } = require('../handlers/errors');
+const { getTitle } = require('../controllers/handleQueries');
 
 router.get('/', getAll);
 
