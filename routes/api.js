@@ -2,13 +2,10 @@ const express = require('express');
 const router = express.Router();
 const { getAll, getNovels, getCollections, getPlays } = require('../controllers/handleRoutes');
 const { catchAsyncErrors } = require('../handlers/errors');
-const { getTitle } = require('../controllers/handleQueries');
 
-router.get('/', getAll);
+router.get('/', catchAsyncErrors(getAll));
 
 router.get('/novels', catchAsyncErrors(getNovels));
-
-
 router.get('/collections', catchAsyncErrors(getCollections));
 router.get('/plays', catchAsyncErrors(getPlays));
 
@@ -21,12 +18,6 @@ router.get('/plays', catchAsyncErrors(getPlays));
         res.send(novels)
     });
     
-    // For finding a single title (NOTE: will NOT return multiple from req.query.title)
-    await collection.find({
-        'title': { $eq: title }
-    }).toArray((err, novels) => {
-        res.send(novels)
-    });
     */
 
 

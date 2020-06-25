@@ -12,62 +12,56 @@
         res.send(bibliography);
     });
 
-    * This is for splitting a multi-field query into an array (and trimming any possible whitespace)
-    * eg.) ?title=Timequake,The Sirens of Titan ==> ['Timequake','The Sirens of Titan']
-    const title = req.query.title;
-    const arr = title.split(',');
-    const newArr = arr.map(x => x.trim());
-    console.log(newArr);
  */
 
 
-module.exports.getQuery = async (req, res, field, query) => {
+const handleQuery = async (req, res, field, query) => {
     const collection = await req.app.locals.collection;
-    const arr = query.split(',').map(x => x.trim());
+    var arr = query.split(',').map(x => x.trim());
 
+    // Change year into integer
     if (field == 'year') {
-        // Change year into integer
-        let yearArr = [];
-        arr.forEach(x => {
-            yearArr.push(parseInt(x));
+        arr = arr.map(x => parseInt(x));
+    }
+    // Only one fieldname, eg. title or year, not both
+    if (arr.length > 1) {
+        // $in matches multiple values in an array
+        return await collection.find({ [field]: { $in: arr } }).toArray((err, items) => {
+            res.send(items);
         })
-        if (yearArr.length > 1) {
-            return await collection.find({ [field]: { $in: yearArr } }).toArray((err, items) => {
-                res.send(items);
-            })
-        } else {
-            const year = yearArr[0];
-            return await collection.find({ [field]: { $eq: year } }).toArray((err, items) => {
-                res.send(items);
-            })
+    } else {
+        // Single value
+        let val = query;
+        if (!isNaN(val)) {
+            val = parseInt(val);
         }
-    } else if (field == 'title') {
-        // Multiple titles
-        if (arr.length > 1) {
-            return await collection.find({ [field]: { $in: arr } }).toArray((err, items) => {
-                res.send(items);
-            })
-        } else {
-            // Single title
-            return await collection.find({ [field]: { $eq: query } }).toArray((err, items) => {
-                res.send(items);
-            })
-        }
+        return await collection.find({ [field]: val }).toArray((err, items) => {
+            res.send(items);
+        })
     }
 }
 
 
-module.exports.getTitle = async (req, res, title) => {
+
+
+// This is for multiple field queries
+
+const handleMultiQuery = async (req, res, query) => {
     const collection = await req.app.locals.collection;
-    if (Array.isArray(title)) {
-        // Multiple title
-        return await collection.find({ 'title': { $in: title } }).toArray((err, items) => {
-            res.send(items);
-        })
-    } else {
-        // Single title
-        return await collection.find({ 'title': { $eq: title } }).toArray((err, items) => {
-            res.send(items);
-        })
-    }
+    const { title, form } = query;
+    const year = parseInt(query.year);
+    await collection.find({
+        $or: [
+            { 'title': title },
+            { 'form': form },
+            { 'year': year }
+        ]
+    }).toArray((err, bibliography) => {
+        res.send(bibliography);
+    })
+}
+
+module.exports = {
+    handleQuery,
+    handleMultiQuery
 }
