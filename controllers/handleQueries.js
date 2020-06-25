@@ -1,19 +1,4 @@
-/** Notes for later
- * You can us $or for multiple field queries to mongo
- * eg) await collection.find({
-        $or: [
-            { 'title': 'The Sirens of Titan' },
-            { 'year': 1952 }
-        ]
-    }).toArray((err, bibliography) => {
-        if (err) {
-            res.status(500).send(err);
-        }
-        res.send(bibliography);
-    });
-
- */
-const { notFound } = require('../util/helpers');
+const { handleDbQuery } = require('./handleDbQueries');
 
 const handleQuery = async (req, res, field, query) => {
     const collection = await req.app.locals.collection;
@@ -27,11 +12,7 @@ const handleQuery = async (req, res, field, query) => {
     if (arr.length > 1) {
         // $in matches multiple values in an array
         return await collection.find({ [field]: { $in: arr } }).toArray((err, items) => {
-            if (items.length === 0) {
-                notFound(res, arr);
-            } else {
-                res.send(items);
-            }
+            return handleDbQuery(res, err, items, arr);
         })
     } else {
         // Single value
@@ -40,21 +21,12 @@ const handleQuery = async (req, res, field, query) => {
             val = parseInt(val);
         }
         return await collection.find({ [field]: val }).toArray((err, items) => {
-            if (items.length === 0) {
-                notFound(res, val);
-            } else {
-                res.send(items);
-            }
-
+            return handleDbQuery(res, err, items, val);
         })
     }
 }
 
-
-
-
-// This is for multiple field queries
-
+// For multiple field queries
 const handleMultiQuery = async (req, res, query) => {
     const collection = await req.app.locals.collection;
     const { title, form } = query;
@@ -65,8 +37,8 @@ const handleMultiQuery = async (req, res, query) => {
             { 'form': form },
             { 'year': year }
         ]
-    }).toArray((err, bibliography) => {
-        res.send(bibliography);
+    }).toArray((err, items) => {
+        return handleDbQuery(res, err, items);
     })
 }
 

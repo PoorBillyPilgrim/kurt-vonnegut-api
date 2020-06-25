@@ -1,4 +1,5 @@
 const { handleQuery, handleMultiQuery } = require('./handleQueries');
+const { handleDbQuery } = require('./handleDbQueries');
 
 const getAll = async (req, res) => {
     // req.app references an instance of the Express application that is using the middleware
@@ -7,10 +8,12 @@ const getAll = async (req, res) => {
 
     const { form, title, year } = req.query;
 
+    // Multiple URL queries
     if (Object.keys(req.query).length > 1) {
         return handleMultiQuery(req, res, req.query);
     }
 
+    // Single URL queries
     if (form) {
         return handleQuery(req, res, 'form', form);
     }
@@ -21,21 +24,42 @@ const getAll = async (req, res) => {
         return handleQuery(req, res, 'year', year);
     }
 
+    // Get entire bibliography
     await collection.find({}).toArray((err, bibliography) => {
-        res.send(bibliography);
+        return handleDbQuery(res, err, bibliography);
     });
 }
 
 const getForm = async (req, res, form) => {
-    const { title, year, setting, firstName, lastName } = req.query;
+    const { title, setting, firstName, lastName } = req.query;
+    const year = parseInt(req.query.year);
     const collection = await req.app.locals.collection;
 
-    if (title) {
-        return handleQuery(req, res, 'title', title);
+    // NOTE: both single and multi queries on form search ENTIRE db
+    // I need them to search only {'form':form}
+    // Multiple URL queries
+    if (Object.keys(req.query).length > 1) {
+        return handleMultiQuery(req, res, req.query);
     }
 
+    // Single URL queries
+    if (title) {
+        // return handleQuery(req, res, 'title', title);
+        return await collection.find({
+            'form': form,
+            'title': title
+        }).toArray((err, items) => {
+            return handleDbQuery(res, err, items, title);
+        });
+    }
     if (year) {
-        return handleQuery(req, res, 'year', year);
+        // return handleQuery(req, res, 'year', year);
+        return await collection.find({
+            'form': form,
+            'year': year
+        }).toArray((err, items) => {
+            return handleDbQuery(res, err, items, year);
+        });
     }
 
     /*
@@ -47,12 +71,9 @@ const getForm = async (req, res, form) => {
         });
     }
     */
-
+    // Get all of one specific form
     await collection.find({ 'form': form }).toArray((err, bibliography) => {
-        if (err) {
-            res.status(500).send(err);
-        }
-        res.send(bibliography);
+        return handleDbQuery(res, err, bibliography);
     });
 
 }
