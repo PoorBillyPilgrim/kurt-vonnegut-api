@@ -13,7 +13,7 @@
     });
 
  */
-
+const { notFound } = require('../util/helpers');
 
 const handleQuery = async (req, res, field, query) => {
     const collection = await req.app.locals.collection;
@@ -27,7 +27,11 @@ const handleQuery = async (req, res, field, query) => {
     if (arr.length > 1) {
         // $in matches multiple values in an array
         return await collection.find({ [field]: { $in: arr } }).toArray((err, items) => {
-            res.send(items);
+            if (items.length === 0) {
+                notFound(res, arr);
+            } else {
+                res.send(items);
+            }
         })
     } else {
         // Single value
@@ -36,7 +40,12 @@ const handleQuery = async (req, res, field, query) => {
             val = parseInt(val);
         }
         return await collection.find({ [field]: val }).toArray((err, items) => {
-            res.send(items);
+            if (items.length === 0) {
+                notFound(res, val);
+            } else {
+                res.send(items);
+            }
+
         })
     }
 }
