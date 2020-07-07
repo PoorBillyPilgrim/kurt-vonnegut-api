@@ -1,12 +1,14 @@
 const { handleQuery, handleMultiQuery } = require('./handleQueries');
 const { handleDbQuery } = require('./handleDbQueries');
+const { notFound } = require('../util/helpers');
 
 const getAll = async (req, res) => {
     // req.app references an instance of the Express application that is using the middleware
     // So app.locals.collection can be accessed in api.js using req.
     const collection = await req.app.locals.collection;
 
-    const { form, title, year } = req.query;
+    const { form, title, year, genre } = req.query;
+    console.log(genre);
 
     // Multiple URL queries
     if (Object.keys(req.query).length > 1) {
@@ -22,6 +24,9 @@ const getAll = async (req, res) => {
     }
     if (year) {
         return handleQuery(req, res, 'year', year);
+    }
+    if (genre) {
+        return handleQuery(req, res, 'genre', genre);
     }
 
     // Get entire bibliography

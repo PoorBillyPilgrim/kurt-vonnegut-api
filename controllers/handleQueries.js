@@ -8,6 +8,7 @@ const handleQuery = async (req, res, field, query) => {
     if (field == 'year') {
         arr = arr.map(x => parseInt(x));
     }
+
     // Only one fieldname, eg. title or year, not both
     if (arr.length > 1) {
         // $in matches multiple values in an array
