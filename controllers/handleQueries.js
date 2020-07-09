@@ -30,12 +30,14 @@ const handleQuery = async (req, res, field, query) => {
 // For multiple field queries
 const handleMultiQuery = async (req, res, query) => {
     const collection = await req.app.locals.collection;
-    const { title, form } = query;
+    const { title, form, genre } = query;
     const year = parseInt(query.year);
+
     await collection.find({
         $or: [
             { 'title': title },
             { 'form': form },
+            { 'genre': genre },
             { 'year': year }
         ]
     }).toArray((err, items) => {

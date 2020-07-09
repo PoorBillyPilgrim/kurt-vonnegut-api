@@ -1,19 +1,28 @@
 const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
+const favicon = require('serve-favicon');
+const path = require('path');
 const MongoClient = require('mongodb').MongoClient;
 const { AppError, handleErrors } = require('./handlers/errors');
+const index = require('./routes/index');
 const api = require('./routes/api');
 const app = express();
 
 const port = process.env.PORT || 3000;
 const url = 'mongodb://localhost:27017';
 
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
+
 // API security
 app.use(helmet());
 app.use(cors());
 
+// Template
+app.set('view engine', 'ejs');
+
 // Routes api through /api param
+app.use('/', index);
 app.use('/api', api);
 
 // Error handling

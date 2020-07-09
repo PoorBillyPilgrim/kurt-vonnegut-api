@@ -8,7 +8,6 @@ const getAll = async (req, res) => {
     const collection = await req.app.locals.collection;
 
     const { form, title, year, genre } = req.query;
-    console.log(genre);
 
     // Multiple URL queries
     if (Object.keys(req.query).length > 1) {
