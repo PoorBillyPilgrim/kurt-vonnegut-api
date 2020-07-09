@@ -1,6 +1,5 @@
 const { handleQuery, handleMultiQuery } = require('./handleQueries');
 const { handleDbQuery } = require('./handleDbQueries');
-const { notFound } = require('../util/helpers');
 
 const getAll = async (req, res) => {
     // req.app references an instance of the Express application that is using the middleware
@@ -35,7 +34,7 @@ const getAll = async (req, res) => {
 }
 
 const getForm = async (req, res, form) => {
-    const { title, setting, firstName, lastName } = req.query;
+    const { title } = req.query;
     const year = parseInt(req.query.year);
     const collection = await req.app.locals.collection;
 
