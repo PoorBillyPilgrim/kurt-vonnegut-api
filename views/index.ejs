@@ -13,15 +13,40 @@
 <body>
     <div>
         <h1>Kurt Vonnegut API</h1>
-        <h2>A simple API for Kurt Vonnegut's bibliography</h2>
+        <h2>An API serving metadata for the Kurt Vonnegut's bibliography. So it goes.</h2>
     </div>
     <div>
-        <h3>API Endpoints</h3>
-        <ul>
-            <li class="list-title">/api</li>
-            <li>Returns Vonnegut's entire bibliography, which includes novels, collected works, plays, and short stories
-            </li>
-        </ul>
+        <h3>What routes are available?</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Endpoint</th>
+                    <th>Response</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>/api</td>
+                    <td>Kurt Vonnegut's entire bibliography for novels, collected works, plays, and short stories.
+                        Filter results using any combination of title, year, genre, form.</td>
+                </tr>
+                <tr>
+                    <td>Example</td>
+                </tr>
+                <tr>
+                    <td>/api/novels</td>
+                    <td>List of Vonnegut's novels</td>
+                </tr>
+                <tr>
+                    <td>/api/collections</td>
+                    <td>List of Vonnegut's collected works</td>
+                </tr>
+                <tr>
+                    <td>/api/plays</td>
+                    <td>List of Vonnegut's plays</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 
