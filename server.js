@@ -1,6 +1,5 @@
 const express = require('express');
 const helmet = require('helmet');
-const bodyParser = require('body-parser');
 const cors = require('cors');
 const MongoClient = require('mongodb').MongoClient;
 const { AppError, handleErrors } = require('./handlers/errors');
@@ -13,10 +12,6 @@ const url = 'mongodb://localhost:27017';
 // API security
 app.use(helmet());
 app.use(cors());
-
-// DO I NEED THIS???
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
 
 // Routes api through /api param
 app.use('/api', api);
@@ -40,4 +35,3 @@ MongoClient.connect(url, { useUnifiedTopology: true }).then(client => {
     app.locals.collection = collection;
     app.listen(port, () => console.info(`Listening on port ${port}. So it goes.`));
 }).catch(err => console.error(err));
-
