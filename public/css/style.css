@@ -2,6 +2,17 @@ body {
     background-color: #fdfffc;
 }
 
+code {
+    overflow-x: auto;
+}
+
+.s5 {
+    padding: 7.5px;
+    background: black;
+    color: white;
+    border-radius: 4px;
+}
+
 .header {
     text-align: center;
 }

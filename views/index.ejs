@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
     <div class="container header">
         <h1>Kurt Vonnegut API</h1>
         <p class="quote"><em>"If this isn't nice, what is?"</em></p>
@@ -35,8 +36,9 @@
             <tbody>
                 <tr>
                     <td>/api</td>
-                    <td>Kurt Vonnegut's entire bibliography for novels, collected works, plays, and short stories.
-                        Filter results using any combination of title, year, genre, form.</td>
+                    <td>Kurt Vonnegut's entire bibliography for novels, collected works, plays, and short
+                        stories.
+                    </td>
                 </tr>
                 <tr>
                     <td>/api/novels</td>
@@ -128,14 +130,16 @@
     </div>
     <div class="container">
         <h3>Examples</h3>
-        <p><a href="http://localhost:3000/api?title=Slaughterhouse-Five"
-                target="_blank">https://kurt-vonnegut-api.herokuapp.com/api?title=Slaughterhouse-Five</a>
-        </p>
+        <div class="row dark">
+            <a class="button button-primary two columns" href="http://localhost:3000/api?title=Slaughterhouse-Five"
+                target="_blank">GET</a>
+            <p class="ten columns s5">https://kurt-vonnegut-api.herokuapp.com/api?title=Slaughterhouse-Five</p>
+        </div>
         <pre><code>[
         {
             _id": "5f07523011807ba43fb805b0",
             "title": "Slaughterhouse-Five",
-            "subtitle": "the Children's Crusade: A Duty-Dance with Death",
+            "subtitle": "The Children's Crusade: A Duty-Dance with Death",
             "form": "novel",
             "genre": [
                 "dark comedy",
