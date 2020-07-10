@@ -12,7 +12,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 const url = 'mongodb://localhost:27017';
 
-app.use(favicon(path.join(__dirname, 'public', 'favicon', 'favicon.ico')))
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // API security
 app.use(helmet());
