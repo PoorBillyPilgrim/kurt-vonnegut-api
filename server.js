@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
@@ -10,7 +11,7 @@ const api = require('./routes/api');
 const app = express();
 
 const port = process.env.PORT || 3000;
-const url = 'mongodb://localhost:27017';
+const url = process.env.MONGO_URL;
 
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(express.static(path.join(__dirname, 'public')));
