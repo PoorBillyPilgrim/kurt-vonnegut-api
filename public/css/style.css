@@ -6,13 +6,20 @@ code {
     overflow-x: auto;
 }
 
+.header {
+    text-align: center;
+}
+
+.repo{
+    position: absolute;
+    right: 10px;
+    font-size: 22px;
+    color: #282828;
+  }
+
 .s5 {
     padding: 7.5px;
     background: black;
     color: white;
     border-radius: 4px;
-}
-
-.header {
-    text-align: center;
 }
