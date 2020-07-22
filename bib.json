@@ -1,0 +1,1403 @@
+[
+    {
+        "title": "Player Piano",
+        "subtitle": "",
+        "form": "novel",
+        "genre": "science fiction",
+        "publisher": "Charles Scribner's Sons",
+        "year": 1952,
+        "pages": 296,
+        "chapters": 35,
+        "setting": [
+            {
+                "city": "Ilium",
+                "state": "New York",
+                "country": "United States of America",
+                "fictional": false
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Paul",
+                "lastName": "Proteus"
+            },
+            {
+                "firstName": "Shah of Bratpuhr"
+            },
+            {
+                "firstName": "Ed",
+                "lastName": "Finnerty"
+            },
+            {
+                "firstName": "Lasher"
+            },
+            {
+                "firstName": "Anita",
+                "lastName": "Proteus"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Player_Piano_(novel)"
+    },
+    {
+        "title": "The Sirens of Titan",
+        "subtitle": "",
+        "form": "novel",
+        "genre": [
+            "science fiction",
+            "fantasy",
+            "dark comedy"
+        ],
+        "publisher": "Delacorte",
+        "year": 1959,
+        "pages": 319,
+        "chapters": 12,
+        "setting": [
+            {
+                "city": "Indianapolis",
+                "state": "Indiana",
+                "country": "United States of America",
+                "fictional": false
+            },
+            {
+                "city": "Newport",
+                "state": "Rhode Island",
+                "country": "United States of America",
+                "fictional": false
+            },
+            {
+                "planet": "Mars",
+                "fictional": false
+            },
+            {
+                "planet": "Mercury",
+                "fictional": false
+            },
+            {
+                "moon": "Titan",
+                "fictional": false
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Winston",
+                "middleName": "Niles",
+                "lastName": "Rumfoord"
+            },
+            {
+                "firstName": "Malachi",
+                "lastName": "Constant"
+            },
+            {
+                "firstName": "Salo"
+            },
+            {
+                "firstName": "Boaz"
+            },
+            {
+                "firstName": "Beatrice Rumfoord"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/The_Sirens_of_Titan"
+    },
+    {
+        "title": "Mother Night",
+        "subtitle": "",
+        "form": "novel",
+        "genre": [
+            "dark comedy",
+            "metafiction"
+        ],
+        "publisher": "Fawcett Publications/Gold Medal Books",
+        "year": 1962,
+        "pages": 192,
+        "chapters": 45,
+        "setting": [
+            {
+                "country": "Israel",
+                "fictional": false
+            },
+            {
+                "country": "Germany",
+                "fictional": false
+            },
+            {
+                "country": "United States of America",
+                "fictional": false
+            },
+            {
+                "city": "Mexico City",
+                "country": "Mexico",
+                "fictional": false
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Howard",
+                "middleName": "W",
+                "lastName": "Campbell",
+                "suffix": "Jr"
+            },
+            {
+                "firstName": "Frank",
+                "lastName": "Wirtanen"
+            },
+            {
+                "firstName": "Helga",
+                "lastName": "Noth"
+            },
+            {
+                "firstName": "Resi",
+                "lastName": "Noth"
+            },
+            {
+                "firstName": "Lionel",
+                "lastName": "Jones"
+            },
+            {
+                "firstName": "Joseph",
+                "lastName": "Goebbels"
+            },
+            {
+                "firstName": "Adolf",
+                "lastName": "Eichmann"
+            },
+            {
+                "firstName": "George",
+                "lastName": "Kraft"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Mother_Night"
+    },
+    {
+        "title": "Cat's Cradle",
+        "subtitle": "",
+        "form": "novel",
+        "genre": [
+            "satire",
+            "science fiction"
+        ],
+        "publisher": "Holt, Rinehart and Winston",
+        "year": 1963,
+        "pages": 192,
+        "chapters": 127,
+        "setting": [
+            {
+                "country": "San Lorenzo",
+                "fictional": true
+            },
+            {
+                "city": "Ilium",
+                "state": "New York",
+                "country": "United States of America",
+                "fictional": false
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "John"
+            },
+            {
+                "firstName": "Bokonon"
+            },
+            {
+                "firstName": "Angela",
+                "lastName": "Hoenikker"
+            },
+            {
+                "firstName": "Emily",
+                "lastName": "Hoenikker"
+            },
+            {
+                "firstName": "Frank",
+                "lastName": "Hoenikker"
+            },
+            {
+                "firstName": "Newt",
+                "lastName": "Hoenikker"
+            },
+            {
+                "firstName": "Papa",
+                "lastName": "Monzano"
+            },
+            {
+                "firstName": "Mona",
+                "middleName": "Aamons",
+                "lastName": "Monzano"
+            },
+            {
+                "firstName": "Francine",
+                "lastName": "Pefko"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Cat%27s_Cradle"
+    },
+    {
+        "title": "God Bless You, Mr. Rosewater",
+        "subtitle": "Pearls Before Swine",
+        "form": "novel",
+        "genre": [
+            "satire",
+            "postmodernism"
+        ],
+        "publisher": "Holt, Rinehart and Winston",
+        "year": 1965,
+        "pages": 218,
+        "chapters": null,
+        "setting": [
+            {
+                "city": "New York City",
+                "state": "New York",
+                "country": "United States of America",
+                "fictional": false
+            },
+            {
+                "city": "Rosewater",
+                "state": "Indiana",
+                "country": "United States of America",
+                "fictional": true
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Kilgore",
+                "lastName": "Trout"
+            },
+            {
+                "firstName": "Eliot",
+                "lastName": "Rosewater"
+            },
+            {
+                "firstName": "Norman",
+                "lastName": "Mushari"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/God_Bless_You,_Mr._Rosewater"
+    },
+    {
+        "title": "Slaughterhouse-Five",
+        "subtitle": "the Children's Crusade: A Duty-Dance with Death",
+        "form": "novel",
+        "genre": [
+            "dark comedy",
+            "satire",
+            "science fiction",
+            "war novel",
+            "metafiction",
+            "postmodernism"
+        ],
+        "publisher": "Delacorte",
+        "year": 1969,
+        "pages": 215,
+        "chapters": 10,
+        "setting": [
+            {
+                "city": "Dresden",
+                "country": "Germany",
+                "fictional": false
+            },
+            {
+                "planet": "Tralfamadore",
+                "fictional": true
+            },
+            {
+                "city": "Ilium",
+                "state": "New York",
+                "country": "United States of America",
+                "fictional": false
+            },
+            {
+                "city": "Ardennes",
+                "country": "Belgium",
+                "fictional": false
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Billy",
+                "lastName": "Pilgrim"
+            },
+            {
+                "firstName": "Kilgore",
+                "lastName": "Trout"
+            },
+            {
+                "firstName": "Eliot",
+                "lastName": "Rosewater"
+            },
+            {
+                "firstName": "Roland",
+                "lastName": "Weary"
+            },
+            {
+                "firstName": "Paul",
+                "lastName": "Lazzaro"
+            },
+            {
+                "firstName": "Edgar",
+                "lastName": "Derby"
+            },
+            {
+                "firstName": "Robert",
+                "lastName": "Pilgrim"
+            },
+            {
+                "firstName": "Valencia",
+                "lastName": "Merble"
+            },
+            {
+                "firstName": "Barbara",
+                "lastName": "Pilgrim"
+            },
+            {
+                "firstName": "Howard",
+                "middleName": "W",
+                "lastName": "Campbell",
+                "suffix": "Jr"
+            },
+            {
+                "firstName": "Montana",
+                "lastName": "Wildhack"
+            },
+            {
+                "firstName": "Bertam",
+                "middleName": "Copeland",
+                "lastName": "Rumfoord"
+            },
+            {
+                "firstName": "Wild Bob"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Slaughterhouse-Five"
+    },
+    {
+        "title": "Breakfast of Champions",
+        "subtitle": "Goodbye Blue Monday",
+        "form": "novel",
+        "genre": [
+            "metafiction",
+            "satire",
+            "postmodernism"
+        ],
+        "publisher": "Delacorte",
+        "year": 1973,
+        "pages": 302,
+        "chapters": 24,
+        "setting": [
+            {
+                "city": "Midland City",
+                "state": "Ohio",
+                "country": "United States of America",
+                "fictional": true
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Kilgore",
+                "lastName": "Trout"
+            },
+            {
+                "firstName": "Eliot",
+                "lastName": "Rosewater"
+            },
+            {
+                "firstName": "Rabo",
+                "lastName": "Karabekian"
+            },
+            {
+                "firstName": "Dwayne",
+                "lastName": "Hoover"
+            },
+            {
+                "firstName": "Francine",
+                "lastName": "Pefko"
+            },
+            {
+                "firstName": "Kazak"
+            },
+            {
+                "firstName": "Wayne",
+                "lastName": "Hoobler"
+            },
+            {
+                "firstName": "Cyprian",
+                "lastName": "Ukwende"
+            },
+            {
+                "firstName": "Celia",
+                "lastName": "Hoover"
+            },
+            {
+                "firstName": "Harry",
+                "lastName": "LeSabre"
+            },
+            {
+                "firstName": "Bunny",
+                "lastName": "Hoover"
+            },
+            {
+                "firstName": "Beatrice",
+                "lastName": "Keedsler"
+            },
+            {
+                "firstName": "Bonnie",
+                "lastName": "MacMahon"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Breakfast_of_Champions"
+    },
+    {
+        "title": "Slapstick",
+        "subtitle": "Lonesome No More!",
+        "form": "novel",
+        "genre": [
+            "science fiction",
+            "absurdist fiction"
+        ],
+        "publisher": "Delacorte",
+        "year": 1976,
+        "pages": 243,
+        "chapters": null,
+        "setting": [
+            {
+                "city": "New York City",
+                "state": "New York",
+                "country": "United States of America",
+                "fictional": false
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Wilbur",
+                "middleName": "Daffodil-11",
+                "lastName": "Swain"
+            },
+            {
+                "firstName": "Melody",
+                "middleName": "Oriole-2",
+                "lastName": "von Peterswald"
+            },
+            {
+                "firstName": "Isadore",
+                "middleName": "Raspberry-19",
+                "lastName": "Cohen"
+            },
+            {
+                "firstName": "Eliza",
+                "lastName": "Swain"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Slapstick_(novel)"
+    },
+    {
+        "title": "Jailbird",
+        "subtitle": "",
+        "form": "novel",
+        "genre": [
+            "political satire"
+        ],
+        "publisher": "Delacorte",
+        "year": 1979,
+        "pages": 246,
+        "chapters": 23,
+        "setting": [
+            {
+                "country": "United States of America",
+                "fictional": false
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Walter",
+                "middleName": "F",
+                "lastName": "Starbuck"
+            },
+            {
+                "firstName": "Kilgore",
+                "lastName": "Trout"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Jailbird_(novel)"
+    },
+    {
+        "title": "Deadeye Dick",
+        "subtitle": "",
+        "form": "novel",
+        "genre": [
+            "satire"
+        ],
+        "publisher": "Delacorte",
+        "year": 1982,
+        "pages": 240,
+        "chapters": null,
+        "setting": [
+            {
+                "city": "Midland City",
+                "state": "Ohio",
+                "country": "United States of America",
+                "fictional": true
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Rudy",
+                "lastName": "Waltz"
+            },
+            {
+                "firstName": "Rabo",
+                "lastName": "Karabekian"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Deadeye_Dick"
+    },
+    {
+        "title": "Galapagos",
+        "subtitle": "",
+        "form": "novel",
+        "genre": [
+            "science fiction",
+            "post-apocalyptic"
+        ],
+        "publisher": "Delacorte",
+        "year": 1985,
+        "pages": 246,
+        "chapters": 14,
+        "setting": [
+            {
+                "city": "Santa Rosalia",
+                "island": "Galapagos Islands",
+                "country": "Ecuador",
+                "fictional": true
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Leon",
+                "middleName": "Trotsky",
+                "lastName": "Trout"
+            },
+            {
+                "firstName": "Kilgore",
+                "lastName": "Trout"
+            },
+            {
+                "firstName": "Hernando",
+                "lastName": "Cruz"
+            },
+            {
+                "firstName": "Mary",
+                "lastName": "Hepburn"
+            },
+            {
+                "firstName": "Roy",
+                "lastName": "Hepburn"
+            },
+            {
+                "firstName": "Akiko",
+                "lastName": "Hiroguchi"
+            },
+            {
+                "firstName": "Hisako",
+                "lastName": "Hiroguchi"
+            },
+            {
+                "firstName": "Zenji",
+                "lastName": "Hiroguchi"
+            },
+            {
+                "firstName": "Bobby",
+                "lastName": "King"
+            },
+            {
+                "firstName": "Andrew",
+                "lastName": "MacIntosh"
+            },
+            {
+                "firstName": "Selena",
+                "lastName": "MacIntosh"
+            },
+            {
+                "firstName": "Jesus",
+                "lastName": "Ortiz"
+            },
+            {
+                "firstName": "Adolf",
+                "lastName": "von Kleist"
+            },
+            {
+                "firstName": "Siegfried",
+                "lastName": "von Kleist"
+            },
+            {
+                "firstName": "James",
+                "lastName": "Wait"
+            },
+            {
+                "firstName": "Geraldo",
+                "lastName": "Delgado"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Gal%C3%A1pagos_(novel)"
+    },
+    {
+        "title": "Bluebeard",
+        "subtitle": "the Autobiography of Rabo Karabekian (1916-1988)",
+        "form": "novel",
+        "genre": [
+            "fictional autobiography"
+        ],
+        "publisher": "Delacorte",
+        "year": 1987,
+        "pages": 336,
+        "chapters": null,
+        "setting": [
+            {
+                "city": "East Hampton",
+                "island": "Long Island",
+                "state": "New York",
+                "country": "United States of America",
+                "fictional": false
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Rabo",
+                "lastName": "Karabekian"
+            },
+            {
+                "firstName": "Circe",
+                "lastName": "Berman"
+            },
+            {
+                "firstName": "Paul",
+                "lastName": "Slazinger"
+            },
+            {
+                "firstName": "Dan",
+                "lastName": "Gregory"
+            },
+            {
+                "firstName": "Marilee",
+                "lastName": "Kemp"
+            },
+            {
+                "firstName": "Edith",
+                "lastName": "Taft"
+            },
+            {
+                "firstName": "Doroty",
+                "lastName": "Roy"
+            },
+            {
+                "firstName": "Allison",
+                "lastName": "White"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Bluebeard_(Vonnegut_novel)"
+    },
+    {
+        "title": "Hocus Pocus",
+        "subtitle": "",
+        "form": "novel",
+        "genre": [
+            "postmodernism"
+        ],
+        "publisher": "Putnam Publishing Group",
+        "year": 1990,
+        "pages": 302,
+        "chapters": null,
+        "setting": [
+            {
+                "state": "New York",
+                "country": "United States of America",
+                "fictional": false
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Eugene",
+                "middleName": "Debs",
+                "lastName": "Hartke"
+            },
+            {
+                "firstName": "Jack",
+                "lastName": "Patton"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Hocus_Pocus_(novel)"
+    },
+    {
+        "title": "Timequake",
+        "subtitle": "",
+        "form": "novel",
+        "genre": [
+            "semi-autobiography",
+            "science fiction",
+            "metafiction"
+        ],
+        "publisher": "Putnam Publishing Group",
+        "year": 1997,
+        "pages": 219,
+        "chapters": 63,
+        "setting": [
+            {
+                "city": "New York City",
+                "state": "New York",
+                "country": "United States of America",
+                "fictional": false
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Kilgore",
+                "lastName": "Trout"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Timequake"
+    },
+    {
+        "title": "Canary in a Cat House",
+        "form": "collection",
+        "genre": [
+            "fiction",
+            "short story"
+        ],
+        "publisher": "Gold Medal",
+        "year": 1961,
+        "pages": 160,
+        "contents": [
+            "Report on the Barnhouse Effect",
+            "All the King's Horses",
+            "D.P.",
+            "The Manned Missles",
+            "The Euphio Question",
+            "More Stately Mansions",
+            "The Foster Portfolio",
+            "Deer in the Works",
+            "Hal Irwin's Magic Lamp",
+            "Tom Edison's Shaggy Dog",
+            "Unready to Wear",
+            "Tomorrow and Tomorrow and Tomorrow"
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Canary_in_a_Cat_House"
+    },
+    {
+        "title": "Welcome to the Monkey House",
+        "form": "collection",
+        "genre": [
+            "fiction",
+            "short story"
+        ],
+        "publisher": "Delacorte",
+        "year": 1968,
+        "pages": 352,
+        "contents": [
+            "Where I Live",
+            "Harrison Bergeron",
+            "Who Am I This Time?",
+            "Welcome to the Monkey House",
+            "Long Walk to Forever",
+            "The Foster Portfolio",
+            "Miss Temptation",
+            "All the King's Horses",
+            "Tom Edison's Shaggy Dog",
+            "New Dictionary",
+            "Next Door",
+            "More Stately Mansions",
+            "The Hyannis Port Story",
+            "D.P.",
+            "Report on the Barnhouse Effect",
+            "The Euphio Question",
+            "Go Back to Your Precious Wife and Son",
+            "Deer in the Works",
+            "The Lie",
+            "Unready to Wear",
+            "The Kid Nobody Could Handle",
+            "The Manned Missles",
+            "EPICAC",
+            "Adam",
+            "Tomorrow and Tomorrow and Tomorrow"
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Welcome_to_the_Monkey_House"
+    },
+    {
+        "title": "Wampeters, Foma, & Granfalloons",
+        "form": "collection",
+        "genre": [
+            "fiction",
+            "non-fiction",
+            "essay",
+            "speech",
+            "interview",
+            "short story"
+        ],
+        "publisher": "Delacorte",
+        "year": 1974,
+        "pages": 285,
+        "contents": [
+            "Science Fiction",
+            "Brief Encounters on the Inland Waterway",
+            "Hello, Star Vega",
+            "Teaching the Unteachable",
+            "Yes, We Have No Nirvanas",
+            "Fortitude",
+            "There's a Maniac Loose Out There",
+            "Excelsior! We're Going to the Moon! Excelsior!",
+            "Address to the American Physical Society",
+            "Good Missiles, Good Manners, Good Night",
+            "Why They Read Hesse",
+            "Oversexed in Indianapolis",
+            "The Mysterious Madame Blavatsky",
+            "Biafra: A People Betrayed",
+            "Address to Graduating Class at Bennington College, 1970",
+            "Torture and Blubber",
+            "Address to the National Institute of Arts and Letters, 1971",
+            "Reflections on My Own Death",
+            "In a Manner that Must Shame God Himself",
+            "Thining Unthinkable, Speaking Unspeakable",
+            "Address and Rededication of Wheaton College Library, 1973",
+            "Invite Rita Rait to America!",
+            "Address to P.E.N. Conference in Stockholm, 1973",
+            "A Political Disease",
+            "Playboy Interview"
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Wampeters,_Foma_and_Granfalloons"
+    },
+    {
+        "title": "Palm Sunday: An Autobiographical Collage",
+        "form": "collection",
+        "genre": [
+            "fiction",
+            "non-fiction",
+            "essay",
+            "speech",
+            "interview",
+            "short story"
+        ],
+        "publisher": "Delacorte",
+        "year": 1981,
+        "pages": 330,
+        "contents": [
+            "Dear Mr. McCarthy",
+            "Un-American Nonsense",
+            "God's Law",
+            "Dear Felix",
+            "An Account of the Ancestry of Kurt Vonnegut, Jr, by an Ancient Friend of His Family",
+            "What I Liked About Cornell",
+            "When I Lost My Innocence",
+            "I Am Embarrased",
+            "How to Write with Style",
+            "Self-Interview",
+            "Who in America is Truly Happy?",
+            "Something Happened",
+            "The Rocky Graziano of American Letters",
+            "The Best of Bob and Ray",
+            "James T. Farrell",
+            "Lavina Lyon",
+            "The Class of '57",
+            "The Noodle Factory",
+            "Mark Twain",
+            "How Jokes Work",
+            "Do Not Mourn!",
+            "Thoughts of a Free Thinker",
+            "William Ellery Channing",
+            "The Big Space Fuck",
+            "Fear and Loathing in Morristown, N J",
+            "Dear Mr X",
+            "Jonathan Swift",
+            "The Chemistry Professor",
+            "Louis-Ferdinand Céline",
+            "Dresden Revisted",
+            "Flowers on the Wall",
+            "Palm Sunday"
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Palm_Sunday_(book)"
+    },
+    {
+        "title": "Nothin Is Lost Save Honor: Two Essays",
+        "form": "collection",
+        "genre": [],
+        "publisher": "Nouveau",
+        "year": 1984,
+        "pages": null,
+        "contents": [],
+        "wiki": ""
+    },
+    {
+        "title": "Fates Worse Than Death: An Autobiographical Collage of the 1980s",
+        "form": "collection",
+        "genre": [
+            "non-fiction",
+            "essay",
+            "speech"
+        ],
+        "publisher": "G. P. Putnam's Sons",
+        "year": 1991,
+        "pages": 240,
+        "contents": [],
+        "wiki": "https://en.wikipedia.org/wiki/Fates_Worse_Than_Death"
+    },
+    {
+        "title": "Bagombo Snuff Box",
+        "form": "collection",
+        "genre": [
+            "fiction",
+            "short story"
+        ],
+        "publisher": "G. P. Putnam's Sons",
+        "year": 1999,
+        "pages": 295,
+        "contents": [
+            "Thanasphere",
+            "Mnemonics",
+            "Any Reasonable Offer",
+            "The Package",
+            "The No-Talent Kid",
+            "Poor Litle Rich Town",
+            "Souvenir",
+            "The Cruise of the Jolly Roger",
+            "Custom-made Bride",
+            "Ambitious Sophomore",
+            "Bagombo Snuff Box",
+            "The Powder-Blue Dragon",
+            "A Present for Big Saint Nick",
+            "Unpaid Consultant",
+            "Der Arme Dolmetscher",
+            "The Boy Who Hated Girls",
+            "This Son of Mine",
+            "A Night for Love",
+            "Find Me a Dream",
+            "2 B R 0 2 B",
+            "Lovers Anonymous",
+            "Hal Irwin's Magic Lamp"
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Bagombo_Snuff_Box"
+    },
+    {
+        "title": "God Bless You, Dr. Kevorkian",
+        "form": "collection",
+        "genre": [
+            "fiction",
+            "short story",
+            "fictional interview"
+        ],
+        "publisher": "Seven Stories",
+        "year": 1999,
+        "pages": 80,
+        "contents": [],
+        "wiki": "https://en.wikipedia.org/wiki/God_Bless_You,_Dr._Kevorkian"
+    },
+    {
+        "title": "A Man Without A Country: A Memoir of life in George W Bush's America",
+        "form": "collection",
+        "genre": [
+            "non-fiction",
+            "essay"
+        ],
+        "publisher": "Seven Stories",
+        "year": 2005,
+        "pages": 160,
+        "contents": [],
+        "wiki": "https://en.wikipedia.org/wiki/A_Man_Without_a_Country"
+    },
+    {
+        "title": "Armageddon in Retrospect and Other New and Unpublished Writings on War and Peace",
+        "form": "collection",
+        "genre": [
+            "non-fiction",
+            "fiction",
+            "essay",
+            "speech"
+        ],
+        "publisher": "G. P. Putnam's Sons",
+        "year": 2008,
+        "pages": 234,
+        "contents": [
+            "Vonnegut's Speech at Clowes Hall, Indianapolis, April 2007",
+            "Letter from PFC Kurt Vonnegut, Jr., to his family, May 29, 1945",
+            "Wailing Shall Be in All Streets",
+            "Great Day",
+            "Guns Before Butter",
+            "Happy Birthday, 1951",
+            "Brighten Up",
+            "The Unicorn Trap",
+            "Unknown Soldier",
+            "Spoils",
+            "Just You and Me, Sammy",
+            "The Commandant's Desk",
+            "Armageddon in Retrospect"
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Armageddon_in_Retrospect"
+    },
+    {
+        "title": "Look at the Birdie: Unpublished Short Fiction",
+        "form": "collection",
+        "genre": [
+            "fiction",
+            "short story"
+        ],
+        "publisher": "Delacorte",
+        "year": 2009,
+        "pages": 256,
+        "contents": [
+            "Letter from Kurt Vonnegut, Jr., to Walter J. Miller, 1951",
+            "Confido",
+            "F U B A R",
+            "Shout About It from the Housetops",
+            "Ed Luby's Key Club",
+            "A Song for Selma",
+            "Hall of Mirrors",
+            "The Nice Little People",
+            "Hello, Red",
+            "Little Drops of Water",
+            "The Petrified Ants",
+            "The Honor of a Newsboy",
+            "Look at the Birdie",
+            "King and Queen of the Universe",
+            "The Good Explainer"
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Armageddon_in_Retrospect"
+    },
+    {
+        "title": "While Mortals Sleep: Unpublished Short Fiction",
+        "form": "collection",
+        "genre": [
+            "fiction",
+            "short story"
+        ],
+        "publisher": "Delacorte",
+        "year": 2011,
+        "pages": 272,
+        "contents": [
+            "Jenny",
+            "The Epizootic",
+            "Hundred-Dolllar Kisses",
+            "Guardian of the Person",
+            "With His Hand on the Throttle",
+            "Girl Pool",
+            "Ruth",
+            "While Mortals Sleep",
+            "Out, Brief Candle",
+            "Tango",
+            "Bomar",
+            "The Man Without No Kiddleys",
+            "Mr. Z",
+            "$10,000 a Year, Easy",
+            "Money Talks",
+            "The Humbugs"
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/While_Mortals_Sleep_(short_story_collection)"
+    },
+    {
+        "title": "Kurt Vonnegut: The Cornell Sun Years 1941-1943",
+        "form": "collection",
+        "genre": [
+            "non-fiction"
+        ],
+        "publisher": "The Cornell Daily Sun",
+        "year": 2012,
+        "pages": 63,
+        "contents": [],
+        "wiki": ""
+    },
+    {
+        "title": "We Are What We Pretend to be: The First and Last Works",
+        "form": "collection",
+        "genre": [
+            "short story",
+            "fiction"
+        ],
+        "publisher": "Vanguard",
+        "year": 2012,
+        "pages": 176,
+        "contents": [
+            "Basic Training",
+            "If God Were Alive Today"
+        ],
+        "wiki": ""
+    },
+    {
+        "title": "Sucker's Portfolio: A Collection of Previously Unpublished Writing",
+        "form": "collection",
+        "genre": [
+            "non-fiction",
+            "fiction",
+            "short story"
+        ],
+        "publisher": "Amazon",
+        "year": 2013,
+        "pages": 190,
+        "contents": [
+            "Between Time and Timbuktu",
+            "Rome",
+            "Eden by the River",
+            "Sucker's Portfolio",
+            "Miss Snow, You're Fired",
+            "Paris, France",
+            "The Last Tasmanian",
+            "Robotville and Mr. Caslow"
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Sucker%27s_Portfolio"
+    },
+    {
+        "title": "If This Isn't Nice, What Is?: Advice to the Young",
+        "form": "collection",
+        "genre": [
+            "non-fiction",
+            "speech"
+        ],
+        "publisher": "Seven Stories",
+        "year": 2013,
+        "pages": 144,
+        "contents": [
+            "How to Make Money and Find Love! Fredonia College, Fredonia, New York, May 20, 1978",
+            "Advice to Graduating Women (That All Men Should Know) Agnes Scott College, Decatur, Georgia, May 15, 1999",
+            "How to Have Something Billionaires Don't, Rice University, Houston, Texas, October 12, 2001",
+            "Why You Can't Stop Me From Speaking Ill of Thomas Jefferson The Indiana Civil Liberties Union (now The American Civil Liberties Union of Indiana, Indianapolis, Indiana, September 16, 2000",
+            "How Music Cures Our Ills (And There Are Lots of Them) Eastern Washington University, Spokane, Washington, April 17, 2004",
+            "Don't Despair If You Never Went to College! Carl Sandburg Award, Chicago, Illinois, October 12, 2001",
+            "What the 'Ghost Dance' of the Native Americans and the French Painters Who Led the Cubist Movement Have In Common The University of Chicago, Chicago, Illinois, February 17, 1994",
+            "How I Learned From a Teacher What Artists Do Syracuse University, Syracuse, New York, May 8, 1994",
+            "Don't Forget Where You Come From Butler University, Indianapolis, Indiana, May 11, 1996"
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/If_This_Isn%27t_Nice,_What_Is%3F:_Advice_to_the_Young"
+    },
+    {
+        "title": "The Very First Christmas Morning",
+        "form": "play",
+        "genre": [
+            "fiction",
+            "historical",
+            "christmas"
+        ],
+        "year": 1962,
+        "setting": [
+            {
+                "city": "Bethlehem",
+                "fictional": false
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Joel"
+            },
+            {
+                "firstName": "Ruth"
+            },
+            {
+                "firstName": "Rachel"
+            },
+            {
+                "firstName": "Susannah"
+            },
+            {
+                "firstName": "Archangel"
+            }
+        ],
+        "wiki": ""
+    },
+    {
+        "title": "Fortitude",
+        "form": "play",
+        "genre": [
+            "fiction"
+        ],
+        "year": 1968,
+        "setting": [],
+        "characters": [
+            {
+                "firstName": "Elbert",
+                "lastName": "Little"
+            },
+            {
+                "firstName": "Tom",
+                "lastName": "Swift"
+            },
+            {
+                "lastName": "Frankenstein"
+            },
+            {
+                "firstName": "Sylvia",
+                "lastName": "Lovejoy"
+            },
+            {
+                "firstName": "Gloria"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Fortitude_(play)"
+    },
+    {
+        "title": "Happy Birthday, Wanda June",
+        "form": "play",
+        "genre": [
+            "fiction",
+            "postmodernism",
+            "comedy",
+            "satire"
+        ],
+        "year": 1970,
+        "setting": [
+            {
+                "city": "New York City",
+                "state": "New York",
+                "country": "United States of America",
+                "fictional": false
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Harold",
+                "lastName": "Ryan"
+            },
+            {
+                "firstName": "Penelope",
+                "lastName": "Ryan"
+            },
+            {
+                "firstName": "Norbert",
+                "lastName": "Woodley"
+            },
+            {
+                "firstName": "Herb",
+                "lastName": "Shuttle"
+            },
+            {
+                "firstName": "Looseleaf",
+                "lastName": "Harper"
+            },
+            {
+                "firstName": "Paul",
+                "lastName": "Ryan"
+            },
+            {
+                "firstName": "Wanda",
+                "lastName": "June"
+            },
+            {
+                "firstName": "Mildred",
+                "lastName": "Ryan"
+            },
+            {
+                "firstName": "Major",
+                "lastName": "von Koningswald"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Happy_Birthday,_Wanda_June"
+    },
+    {
+        "title": "Requiem",
+        "form": "play",
+        "genre": [
+            "liturgy"
+        ],
+        "year": 1987,
+        "setting": [],
+        "characters": [],
+        "wiki": ""
+    },
+    {
+        "title": "Make Up Your Mind",
+        "form": "play",
+        "genre": [
+            "comedy"
+        ],
+        "year": 1993,
+        "setting": [],
+        "characters": [
+            {
+                "firstName": "Roland",
+                "lastName": "Stackhouse"
+            },
+            {
+                "firstName": "George",
+                "lastName": "Stackhouse"
+            },
+            {
+                "firstName": "Karen Finch",
+                "lastName": "Woodley"
+            },
+            {
+                "firstName": "Fletcher/Vonnegut"
+            }
+        ],
+        "wiki": ""
+    },
+    {
+        "title": "Miss Temptation",
+        "form": "play",
+        "genre": [
+            "comedy"
+        ],
+        "year": 1993,
+        "setting": [
+            {
+                "state": "Vermont",
+                "country": "United States of America",
+                "fictional": true
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Hinkley"
+            },
+            {
+                "firstName": "Bekcy"
+            },
+            {
+                "firstName": "Myers"
+            },
+            {
+                "firstName": "Mitch"
+            },
+            {
+                "firstName": "Jamie"
+            },
+            {
+                "firstName": "Gooba"
+            },
+            {
+                "firstName": "Fuller"
+            },
+            {
+                "firstName": "Susanna"
+            },
+            {
+                "firstName": "Mover"
+            }
+        ],
+        "wiki": ""
+    },
+    {
+        "title": "L'Histoire du Soldat",
+        "form": "play",
+        "genre": [
+            "libretto"
+        ],
+        "year": 1993,
+        "setting": [
+            {
+                "city": "Sainte-Marie-aux-Mines",
+                "country": "France",
+                "fictional": false
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Eddie",
+                "lastName": "Slovik"
+            },
+            {
+                "lastName": "The General"
+            },
+            {
+                "firstName": "Radio Announcer"
+            },
+            {
+                "firstName": "Military Policeman"
+            },
+            {
+                "firstName": "Red Cross Girl"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/L%27Histoire_du_soldat"
+    }
+]
