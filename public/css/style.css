@@ -6,6 +6,10 @@ code {
     overflow-x: auto;
 }
 
+button {
+    padding: 0 !important;
+}
+
 .header {
     text-align: center;
 }
@@ -17,7 +21,7 @@ code {
     color: #282828;
   }
 
-.s5 {
+.dark-url {
     padding: 7.5px;
     background: black;
     color: white;

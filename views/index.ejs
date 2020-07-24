@@ -131,13 +131,32 @@
         </div>
     </div>
     <div class="container">
-        <h3>Examples</h3>
-        <div class="row dark">
-            <a class="button button-primary two columns" href="http://localhost:3000/api?title=Slaughterhouse-Five"
-                target="_blank">GET</a>
-            <p class="ten columns s5">https://kurtvonnegutapi.com/api?title=Slaughterhouse-Five</p>
+        <h3>Filters</h3>
+        <p>on the /api route, you can filter using any combination of form, title, and year
+            <br>
+            you can also search multiples of each filter, separated by commas
+            <br>
+            however, the API does not support searching multiple filters that have been stacked
+            <br>
+            (sorry!)</p>
+        <div class="row">
+            <p>✅ <span class="dark-url">https://kurtvonnegutapi.com/api?year=1952,1969</span></p>
+            <p>❌ <span class="dark-url">https://kurtvonnegutapi.com/api?year1952,1969&title=Breakfast of
+                    Champions</span></p>
         </div>
-        <pre><code>[
+        <h3>Examples</h3>
+        <div class="row">
+            <p class="six columns dark-url">https://kurtvonnegutapi.com/api?title=Slaughterhouse-Five</p>
+            <p class="six columns dark-url">https://kurtvonnegutapi.com/api?year=1952&title=Cat's Cradle</p>
+        </div>
+        <div class="row">
+            <a class="button button-primary six columns" href="http://localhost:3000/api?title=Slaughterhouse-Five"
+                target="_blank">GET</a>
+            <a class="button button-primary six columns"
+                href="https://kurtvonnegutapi.com/api?year=1952&title=Cat's Cradle" target="_blank">GET</a>
+        </div>
+        <div class="row">
+            <pre class="six columns"><code>[
         {
             _id": "5f07523011807ba43fb805b0",
             "title": "Slaughterhouse-Five",
@@ -236,6 +255,113 @@
             "wiki": "https://en.wikipedia.org/wiki/Slaughterhouse-Five"
         }
     ]</code></pre>
+            <pre class="six columns"><code>[
+                {
+                  "_id": "5f07523011807ba43fb805a8",
+                  "title": "Player Piano",
+                  "subtitle": "",
+                  "form": "novel",
+                  "genre": "science fiction",
+                  "publisher": "Charles Scribner's Sons",
+                  "year": 1952,
+                  "pages": 296,
+                  "chapters": 35,
+                  "setting": [
+                    {
+                      "city": "Ilium",
+                      "state": "New York",
+                      "country": "United States of America",
+                      "fictional": false
+                    }
+                  ],
+                  "characters": [
+                    {
+                      "firstName": "Paul",
+                      "lastName": "Proteus"
+                    },
+                    {
+                      "firstName": "Shah of Bratpuhr"
+                    },
+                    {
+                      "firstName": "Ed",
+                      "lastName": "Finnerty"
+                    },
+                    {
+                      "firstName": "Lasher"
+                    },
+                    {
+                      "firstName": "Anita",
+                      "lastName": "Proteus"
+                    }
+                  ],
+                  "wiki": "https://en.wikipedia.org/wiki/Player_Piano_(novel)"
+                },
+                {
+                  "_id": "5f07523011807ba43fb805aa",
+                  "title": "Cat's Cradle",
+                  "subtitle": "",
+                  "form": "novel",
+                  "genre": [
+                    "satire",
+                    "science fiction"
+                  ],
+                  "publisher": "Holt, Rinehart and Winston",
+                  "year": 1963,
+                  "pages": 192,
+                  "chapters": 127,
+                  "setting": [
+                    {
+                      "country": "San Lorenzo",
+                      "fictional": true
+                    },
+                    {
+                      "city": "Ilium",
+                      "state": "New York",
+                      "country": "United States of America",
+                      "fictional": false
+                    }
+                  ],
+                  "characters": [
+                    {
+                      "firstName": "John"
+                    },
+                    {
+                      "firstName": "Bokonon"
+                    },
+                    {
+                      "firstName": "Angela",
+                      "lastName": "Hoenikker"
+                    },
+                    {
+                      "firstName": "Emily",
+                      "lastName": "Hoenikker"
+                    },
+                    {
+                      "firstName": "Frank",
+                      "lastName": "Hoenikker"
+                    },
+                    {
+                      "firstName": "Newt",
+                      "lastName": "Hoenikker"
+                    },
+                    {
+                      "firstName": "Papa",
+                      "lastName": "Monzano"
+                    },
+                    {
+                      "firstName": "Mona",
+                      "middleName": "Aamons",
+                      "lastName": "Monzano"
+                    },
+                    {
+                      "firstName": "Francine",
+                      "lastName": "Pefko"
+                    }
+                  ],
+                  "wiki": "https://en.wikipedia.org/wiki/Cat%27s_Cradle"
+                }
+              ]</code></pre>
+        </div>
     </div>
 </body>
 
