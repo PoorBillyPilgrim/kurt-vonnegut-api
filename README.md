@@ -19,6 +19,7 @@ On /api route, filter results using any combination of title, form, genre, and y
 you can also search multiples of each filter, separated by commas
 
 :white_check_mark: `https://kurtvonnegutapi.com/api?year=1952,1969`
+
 :x: `https://kurtvonnegutapi.com/api?year1952,1969&title=Breakfast of Champions`
 
 ## Usage
