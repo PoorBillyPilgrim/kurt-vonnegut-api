@@ -4,6 +4,9 @@
 The Kurt Vonnegut API is a RESTful API built using NodeJS, Express, MongoDB, and EJS. It was designed to serve metadata on Kurt Vonnegut's bibliography, currently returning information on his novels, collected works, and plays. 
 
 ## Metadata
+Form | Metadata | Form | Metadata | Form | Metadata
+---- | -------- | ---- | -------- | ---- | -------
+Novels | title<br>subtitle<br>form<br>genre<br>publisher<br>year<br>pages<br>chapters<br>setting<br>characters<br>wiki<br> | Collected Works | <br>title<br>form<br>genre<br>publisher<br>year<br>pages<br>contents<br>wiki<br><br> | Plays | <br>title<br>form<br> genre<br>publisher<br>year<br>setting<br>characters<br>wiki<br><br>
 
 ## Routes
 - `/api`
