@@ -1,7 +1,7 @@
 # Kurt Vonnegut API
 > _If this isn't nice, what is?_
 
-The Kurt Vonnegut API is a RESTful API built using NodeJS, Express, MongoDB, and EJS. It was designed to serve metadata on Kurt Vonnegut's bibliography, currently returning information on his novels, collected works, and plays. 
+The Kurt Vonnegut API is a RESTful API built using NodeJS, Express, MongoDB, and EJS. It was designed to serve metadata on Kurt Vonnegut's bibliography, currently returning information on his novels, collected works, and plays as JSON. 
 
 ## Metadata
 Form | Metadata | Form | Metadata | Form | Metadata
@@ -15,11 +15,16 @@ Novels | title<br>subtitle<br>form<br>genre<br>publisher<br>year<br>pages<br>cha
 - `/api/plays`
 
 ## Filters
+On /api route, filter results using any combination of title, form, genre, and year
+you can also search multiples of each filter, separated by commas
 
+:white_check_mark: `https://kurtvonnegutapi.com/api?year=1952,1969`
+:x: `https://kurtvonnegutapi.com/api?year1952,1969&title=Breakfast of Champions`
 
 ## Usage
+Use any http library, below is an example using [Request](https://github.com/request/request#readme)
 ```js
-/// Request package
+// Request
 const request = require('request');
 
 request({
@@ -30,7 +35,6 @@ request({
 });
 
 // Output
-
 [
   {
     _id: '5f07523011807ba43fb805b0',
