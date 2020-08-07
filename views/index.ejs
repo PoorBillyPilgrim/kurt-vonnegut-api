@@ -19,12 +19,20 @@
 </head>
 
 <body>
-    <a class="repo" href="https://github.com/PoorBillyPilgrim/kurt-vonnegut-api" target="_blank" rel="noopener"><i
-            class="fab fa-github"></i></a>
+    <a class="github-icon" href="https://github.com/PoorBillyPilgrim/kurt-vonnegut-api" target="_blank"
+        rel="noopener"><i class="fab fa-github"></i></a>
     <div class="container header">
         <h1>Kurt Vonnegut API</h1>
-        <p class="quote"><em>"If this isn't nice, what is?"</em></p>
+
+        <div>
+            <hr>
+            <p class="quote"><em>"If this isn't nice, what is?"</em></p>
+            <hr>
+        </div>
+
+
         <h2>An API serving metadata for Kurt Vonnegut's bibliography. <br>So it goes.</h2>
+        <hr>
     </div>
     <div class="container">
         <h3>Routes</h3>
@@ -38,8 +46,7 @@
             <tbody>
                 <tr>
                     <td>/api</td>
-                    <td>Kurt Vonnegut's entire bibliography for novels, collected works, plays, and short
-                        stories.
+                    <td>Kurt Vonnegut's entire bibliography for novels, collected works, and plays
                     </td>
                 </tr>
                 <tr>
@@ -102,7 +109,7 @@
                         year<br>
                         pages<br>
                         contents<br>
-                        wiki<br>
+                        wiki<br><br><br><br>
                     </td>
                 </tr>
             </table>
@@ -123,7 +130,7 @@
                         year<br>
                         setting<br>
                         characters<br>
-                        wiki<br>
+                        wiki<br><br><br><br>
                     </td>
                 </tr>
                 </tbody>
@@ -132,7 +139,7 @@
     </div>
     <div class="container">
         <h3>Filters</h3>
-        <p>on the /api route, you can filter using any combination of form, title, and year
+        <p>on the /api route, you can filter using any combination of title, form, genre, and year
             <br>
             you can also search multiples of each filter, separated by commas
             <br>
