@@ -2,28 +2,40 @@ body {
     background-color: #fdfffc;
 }
 
-code {
-    overflow-x: auto;
-}
-
-button {
-    padding: 0 !important;
+/** Hero **/
+h1 {
+    font-size: 12.5rem;
 }
 
 .header {
     text-align: center;
 }
 
-.repo{
+
+.quote {
+    margin-bottom: 0;
+    letter-spacing: 0.5rem;
+}
+
+.github-icon {
     position: absolute;
     right: 10px;
     font-size: 22px;
     color: #282828;
-  }
+}
 
+/** Filter and Examples **/
 .dark-url {
     padding: 7.5px;
     background: black;
     color: white;
     border-radius: 4px;
+}
+
+button {
+    padding: 0 !important;
+}
+
+code {
+    overflow-x: auto;
 }
