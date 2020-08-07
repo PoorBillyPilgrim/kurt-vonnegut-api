@@ -15,8 +15,11 @@ Novels | title<br>subtitle<br>form<br>genre<br>publisher<br>year<br>pages<br>cha
 - `/api/plays`
 
 ## Filters
-On /api route, filter results using any combination of title, form, genre, and year
-you can also search multiples of each filter, separated by commas
+On /api route, filter results using any combination of title, form, genre, and year.
+
+Search multiple filters, separated by commas
+
+API does not currently support combining multiple filters (sorry!)
 
 :white_check_mark: `https://kurtvonnegutapi.com/api?year=1952,1969`
 
