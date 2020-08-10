@@ -19,8 +19,19 @@
 </head>
 
 <body>
-    <a class="github-icon" href="https://github.com/PoorBillyPilgrim/kurt-vonnegut-api" target="_blank"
-        rel="noopener"><i class="fab fa-github"></i></a>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#about">About</a></li>
+            <li><a href="#routes">Routes</a></li>
+            <li><a>Metadata</a></li>
+            <li><a>Filters</a></li>
+            <li><a>Examples</a></li>
+            <li><a>Usage</a></li>
+            <li><a class="github-icon" href="https://github.com/PoorBillyPilgrim/kurt-vonnegut-api" target="_blank"
+                    rel="noopener"><i class="fab fa-github"></i></a></li>
+        </ul>
+    </nav>
+
     <div class="container header">
         <h1>Kurt Vonnegut API</h1>
 
@@ -31,11 +42,33 @@
         </div>
 
 
-        <h2>An API serving metadata for Kurt Vonnegut's bibliography. <br>So it goes.</h2>
+        <h2>An API for Kurt Vonnegut's bibliography. <br>So it goes.</h2>
         <hr>
     </div>
+
     <div class="container">
-        <h3>Routes</h3>
+        <h3 id="about">What is an API?</h3>
+        <p>The Kurt Vonnegut API is a RESTful API built using Node.js, Express, MongoDB, and EJS. It was designed to
+            serve metadata on Kurt Vonnegut's bibliography, currently returning information on his novels, collected
+            works, and plays as JSON.</p>
+        <p>A <a href="https://restfulapi.net/" target="_blank">RESTful API</a> is simply computer code that uses HTTP to
+            request services from
+            a program running on another computer, often called a server. It allows anyone to access a partcular set of
+            data using
+            whatever computer language on whatever operating system. In this case, this API makes it really easy to
+            get info on Kurt Vonnegut's bibliography. All you need is a <a
+                href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier" target="_blank">Uniform Resource
+                Identifier (URI)</a> to get the data.</p>
+        <div class="row">
+            <p class="intro-url">
+                <a href="https://kurtvonnegutapi.com/api">
+                    <span class="dark-url">
+                        https://kurtvonnegutapi.com/api
+                    </span>
+                </a>
+            </p>
+        </div>
+        <h2 id="routes">Routes</h2>
         <table>
             <thead>
                 <tr>
@@ -64,6 +97,7 @@
             </tbody>
         </table>
     </div>
+
     <div class="container">
         <h3>Metadata</h3>
         <div class="row">
@@ -143,19 +177,28 @@
             </table>
         </div>
     </div>
+
     <div class="container">
         <h3>Filters</h3>
-        <p>on the /api route, you can filter using any combination of title, form, genre, and year
-            <br>
-            you can also search multiples of each filter, separated by commas
-            <br>
-            however, the API does not support searching multiple filters that have been stacked
-            <br>
-            (sorry!)</p>
+        <p>You can currently only filter searches using the main <code>/api</code> route, using any combination of
+            title,
+            form, genre, and year
+            seperated by an
+            ampersand
+            <code>(&)</code>.
+        </p>
         <div class="row">
-            <p>✅ <span class="dark-url">https://kurtvonnegutapi.com/api?year=1952,1969</span></p>
-            <p>❌ <span class="dark-url">https://kurtvonnegutapi.com/api?year1952,1969&title=Breakfast of
-                    Champions</span></p>
+            <p>✅ <a href="https://kurtvonnegutapi.com/api?title=Slaughterhouse-Five&year=1952"></a><span
+                    class="dark-url">https://kurtvonnegutapi.com/api?title=Slaughterhouse-Five&year=1952</span></a></p>
+        </div>
+        <p>You can search using multiple filters separated by commas</p>
+        <p>✅ <a href="https://kurtvonnegutapi.com/api?year=1952,1969"></a><span
+                class="dark-url">https://kurtvonnegutapi.com/api?year=1952,1969</span></a></p>
+        <p>You cannot, however, use multiple filters and different filters at the same time.</p>
+        <div class="row">
+            <p>❌ <a href="https://kurtvonnegutapi.com/api?year1952,1969&title=Breakfast of Champions"></a><span
+                    class="dark-url">https://kurtvonnegutapi.com/api?year1952,1969&title=Breakfast of
+                    Champions</span></p></a>
         </div>
         <h3>Examples</h3>
         <div class="row">
@@ -376,6 +419,11 @@
               ]</code></pre>
         </div>
     </div>
+
+    <div class="container">
+        <h3>Usage</h3>
+    </div>
+
 </body>
 
 </html>
