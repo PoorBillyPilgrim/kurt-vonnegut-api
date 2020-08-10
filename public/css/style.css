@@ -2,6 +2,20 @@ body {
     background-color: #fdfffc;
 }
 
+a {
+    text-decoration: none;
+}
+
+/** Navbar **/
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
 /** Hero **/
 h1 {
     font-size: 12.5rem;
@@ -22,6 +36,11 @@ h1 {
     right: 10px;
     font-size: 22px;
     color: #282828;
+}
+
+/** Intro **/
+.intro-url {
+    text-align: center;
 }
 
 /** Filter and Examples **/
