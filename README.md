@@ -22,7 +22,7 @@ Novels | title<br>subtitle<br>form<br>genre<br>publisher<br>year<br>pages<br>cha
 - `/api/plays`
 
 ## Filters
-You can currently only fiter searches using the main `/api` route, using any combination of title, form, genre, and year seperated by an ampersand (`&`).
+You can currently only filter searches using the main `/api` route, using any combination of title, form, genre, and year seperated by an ampersand (`&`).
 
 :white_check_mark: `https://kurtvonnegutapi.com/api?title=Slaughterhouse-Five&year=1952`
 
