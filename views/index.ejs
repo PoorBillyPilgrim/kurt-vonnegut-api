@@ -19,19 +19,18 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="container">
         <ul class="navbar">
             <li><a href="#about">About</a></li>
             <li><a href="#routes">Routes</a></li>
-            <li><a>Metadata</a></li>
-            <li><a>Filters</a></li>
-            <li><a>Examples</a></li>
-            <li><a>Usage</a></li>
-            <li><a class="github-icon" href="https://github.com/PoorBillyPilgrim/kurt-vonnegut-api" target="_blank"
-                    rel="noopener"><i class="fab fa-github"></i></a></li>
+            <li><a href="#metadata">Metadata</a></li>
+            <li><a href="#filters">Filters</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#usage">Usage</a></li>
         </ul>
     </nav>
-
+    <a class="github-icon" href="https://github.com/PoorBillyPilgrim/kurt-vonnegut-api" target="_blank"
+        rel="noopener"><i class="fab fa-github"></i></a>
     <div class="container header">
         <h1>Kurt Vonnegut API</h1>
 
@@ -51,9 +50,11 @@
         <p>The Kurt Vonnegut API is a RESTful API built using Node.js, Express, MongoDB, and EJS. It was designed to
             serve metadata on Kurt Vonnegut's bibliography, currently returning information on his novels, collected
             works, and plays as JSON.</p>
-        <p>A <a href="https://restfulapi.net/" target="_blank">RESTful API</a> is simply computer code that uses HTTP to
+        <p>A <a href="https://restfulapi.net/" target="_blank">RESTful API</a> is simply computer code that uses
+            HTTP to
             request services from
-            a program running on another computer, often called a server. It allows anyone to access a partcular set of
+            a program running on another computer, often called a server. It allows anyone to access a partcular set
+            of
             data using
             whatever computer language on whatever operating system. In this case, this API makes it really easy to
             get info on Kurt Vonnegut's bibliography. All you need is a <a
@@ -68,6 +69,7 @@
                 </a>
             </p>
         </div>
+        <hr>
         <h2 id="routes">Routes</h2>
         <table>
             <thead>
@@ -78,20 +80,20 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>/api</td>
+                    <td><code>/api</code></td>
                     <td>Kurt Vonnegut's entire bibliography for novels, collected works, and plays
                     </td>
                 </tr>
                 <tr>
-                    <td>/api/novels</td>
+                    <td><code>/api/novels</code></td>
                     <td>List of Vonnegut's novels</td>
                 </tr>
                 <tr>
-                    <td>/api/collections</td>
+                    <td><code>/api/collections</code></td>
                     <td>List of Vonnegut's collected works</td>
                 </tr>
                 <tr>
-                    <td>/api/plays</td>
+                    <td><code>/api/plays</code></td>
                     <td>List of Vonnegut's plays</td>
                 </tr>
             </tbody>
@@ -99,7 +101,7 @@
     </div>
 
     <div class="container">
-        <h3>Metadata</h3>
+        <h3 id="metadata">Metadata</h3>
         <div class="row">
             <table class="four columns">
                 <thead>
@@ -179,7 +181,7 @@
     </div>
 
     <div class="container">
-        <h3>Filters</h3>
+        <h3 id="filters">Filters</h3>
         <p>You can currently only filter searches using the main <code>/api</code> route, using any combination of
             title,
             form, genre, and year
@@ -187,32 +189,32 @@
             ampersand
             <code>(&)</code>.
         </p>
-        <div class="row">
-            <p>✅ <a href="https://kurtvonnegutapi.com/api?title=Slaughterhouse-Five&year=1952"></a><span
-                    class="dark-url">https://kurtvonnegutapi.com/api?title=Slaughterhouse-Five&year=1952</span></a></p>
-        </div>
+        <div class="row filters-row">
+            <a href="https://kurtvonnegutapi.com/api?title=Slaughterhouse-Five&year=1952">
+                <p class="dark-url">✅ https://kurtvonnegutapi.com/api?title=Slaughterhouse-Five&year=1952
+                </p>
+            </a></div>
         <p>You can search using multiple filters separated by commas</p>
-        <p>✅ <a href="https://kurtvonnegutapi.com/api?year=1952,1969"></a><span
-                class="dark-url">https://kurtvonnegutapi.com/api?year=1952,1969</span></a></p>
+        <div class="row filters-row">
+            <a href="https://kurtvonnegutapi.com/api?year=1952,1969">
+                <p class="dark-url">✅ https://kurtvonnegutapi.com/api?year=1952,1969</p>
+            </a>
+        </div>
         <p>You cannot, however, use multiple filters and different filters at the same time.</p>
-        <div class="row">
-            <p>❌ <a href="https://kurtvonnegutapi.com/api?year1952,1969&title=Breakfast of Champions"></a><span
-                    class="dark-url">https://kurtvonnegutapi.com/api?year1952,1969&title=Breakfast of
-                    Champions</span></p></a>
+        <div class="row filters-row">
+            <a href="https://kurtvonnegutapi.com/api?year1952,1969&title=Breakfast of Champions">
+                <p class="dark-url">❌ https://kurtvonnegutapi.com/api?year1952,1969&title=Breakfast of
+                    Champions</p>
+            </a>
         </div>
-        <h3>Examples</h3>
-        <div class="row">
-            <p class="six columns dark-url">https://kurtvonnegutapi.com/api?title=Slaughterhouse-Five</p>
-            <p class="six columns dark-url">https://kurtvonnegutapi.com/api?year=1952&title=Cat's Cradle</p>
-        </div>
-        <div class="row">
-            <a class="button button-primary six columns" href="http://localhost:3000/api?title=Slaughterhouse-Five"
-                target="_blank">GET</a>
-            <a class="button button-primary six columns"
-                href="https://kurtvonnegutapi.com/api?year=1952&title=Cat's Cradle" target="_blank">GET</a>
-        </div>
-        <div class="row">
-            <pre class="six columns"><code>[
+        <hr>
+    </div>
+    <div class="container">
+        <h3 id="examples">Example</h3>
+        <a class="button button-primary" href="https://kurtvonnegutapi.com/api?title=Slaughterhouse-Five"
+            target="_blank">GET</a>
+        <p class="dark-url">https://kurtvonnegutapi.com/api?title=Slaughterhouse-Five</p>
+        <pre class=""><code>[
         {
             _id": "5f07523011807ba43fb805b0",
             "title": "Slaughterhouse-Five",
@@ -311,117 +313,10 @@
             "wiki": "https://en.wikipedia.org/wiki/Slaughterhouse-Five"
         }
     ]</code></pre>
-            <pre class="six columns"><code>[
-                {
-                  "_id": "5f07523011807ba43fb805a8",
-                  "title": "Player Piano",
-                  "subtitle": "",
-                  "form": "novel",
-                  "genre": "science fiction",
-                  "publisher": "Charles Scribner's Sons",
-                  "year": 1952,
-                  "pages": 296,
-                  "chapters": 35,
-                  "setting": [
-                    {
-                      "city": "Ilium",
-                      "state": "New York",
-                      "country": "United States of America",
-                      "fictional": false
-                    }
-                  ],
-                  "characters": [
-                    {
-                      "firstName": "Paul",
-                      "lastName": "Proteus"
-                    },
-                    {
-                      "firstName": "Shah of Bratpuhr"
-                    },
-                    {
-                      "firstName": "Ed",
-                      "lastName": "Finnerty"
-                    },
-                    {
-                      "firstName": "Lasher"
-                    },
-                    {
-                      "firstName": "Anita",
-                      "lastName": "Proteus"
-                    }
-                  ],
-                  "wiki": "https://en.wikipedia.org/wiki/Player_Piano_(novel)"
-                },
-                {
-                  "_id": "5f07523011807ba43fb805aa",
-                  "title": "Cat's Cradle",
-                  "subtitle": "",
-                  "form": "novel",
-                  "genre": [
-                    "satire",
-                    "science fiction"
-                  ],
-                  "publisher": "Holt, Rinehart and Winston",
-                  "year": 1963,
-                  "pages": 192,
-                  "chapters": 127,
-                  "setting": [
-                    {
-                      "country": "San Lorenzo",
-                      "fictional": true
-                    },
-                    {
-                      "city": "Ilium",
-                      "state": "New York",
-                      "country": "United States of America",
-                      "fictional": false
-                    }
-                  ],
-                  "characters": [
-                    {
-                      "firstName": "John"
-                    },
-                    {
-                      "firstName": "Bokonon"
-                    },
-                    {
-                      "firstName": "Angela",
-                      "lastName": "Hoenikker"
-                    },
-                    {
-                      "firstName": "Emily",
-                      "lastName": "Hoenikker"
-                    },
-                    {
-                      "firstName": "Frank",
-                      "lastName": "Hoenikker"
-                    },
-                    {
-                      "firstName": "Newt",
-                      "lastName": "Hoenikker"
-                    },
-                    {
-                      "firstName": "Papa",
-                      "lastName": "Monzano"
-                    },
-                    {
-                      "firstName": "Mona",
-                      "middleName": "Aamons",
-                      "lastName": "Monzano"
-                    },
-                    {
-                      "firstName": "Francine",
-                      "lastName": "Pefko"
-                    }
-                  ],
-                  "wiki": "https://en.wikipedia.org/wiki/Cat%27s_Cradle"
-                }
-              ]</code></pre>
-        </div>
     </div>
 
     <div class="container">
-        <h3>Usage</h3>
+        <h3 id="usage">Usage</h3>
     </div>
 
 </body>
