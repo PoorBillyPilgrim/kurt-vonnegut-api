@@ -39,12 +39,10 @@ h1 {
     text-align: center;
 }
 
-
 .quote {
     margin-bottom: 0;
     letter-spacing: 0.5rem;
 }
-
 
 /** Intro **/
 .intro-url {
@@ -71,6 +69,23 @@ code {
     overflow-x: auto;
 }
 
+/** Footer **/
+.signature {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.social-media {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.social-media-icon {
+    font-size: 30px;
+    color: #282828;
+    padding: 0 2.5px;
+}
 
 @media (min-width: 750px) {
 
@@ -97,6 +112,7 @@ code {
     .github-icon {
         margin-top: -62px;
     }
+
     /** Filters and Examples **/
     .dark-url {
         display: inline;
