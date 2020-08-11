@@ -1,10 +1,38 @@
+/** Global **/
 body {
     background-color: #fdfffc;
+}
+
+a {
+    text-decoration: none;
+}
+
+/** Navbar **/
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav a {
+    color: #707070;
+}
+
+.github-icon {
+    position: absolute;
+    right: 10px;
+    font-size: 22px;
+    color: #282828;
+    margin-top: -220px;
+}
+
+.github-icon:hover {
+    color: #0FA0CE;
 }
 
 /** Hero **/
 h1 {
     font-size: 12.5rem;
+    
 }
 
 .header {
@@ -17,11 +45,10 @@ h1 {
     letter-spacing: 0.5rem;
 }
 
-.github-icon {
-    position: absolute;
-    right: 10px;
-    font-size: 22px;
-    color: #282828;
+
+/** Intro **/
+.intro-url {
+    text-align: center;
 }
 
 /** Filter and Examples **/
@@ -32,10 +59,47 @@ h1 {
     border-radius: 4px;
 }
 
+.filters-row {
+    margin-bottom: 2.5rem;
+}
+
 button {
     padding: 0 !important;
 }
 
 code {
     overflow-x: auto;
+}
+
+
+@media (min-width: 750px) {
+
+    /** Navbar **/
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    nav a {
+        color: #707070;
+    }
+
+    nav a:hover {
+        color: #000;
+    }
+
+    .github-icon {
+        margin-top: -62px;
+    }
+    /** Filters and Examples **/
+    .dark-url {
+        display: inline;
+    }
+
 }

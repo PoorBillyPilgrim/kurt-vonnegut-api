@@ -4,7 +4,7 @@
 The Kurt Vonnegut API is a RESTful API built using Node.js, Express, MongoDB, and EJS. It was designed to serve metadata on Kurt Vonnegut's bibliography, currently returning information on his novels, collected works, and plays as JSON. 
 
 ## What is an API?
-A [RESTful API](https://restfulapi.net/) is simply computer code that uses HTTP to request services from a program running on an operating system. It allows anyone to access a partcular set of data using whatever computer language on whatever operating system. In this case, this API makes it really easy to get info on Kurt Vonnegut's bibliography. All you need is a URI to get the data.
+A [RESTful API](https://restfulapi.net/) is simply computer code that uses HTTP to request services from a program running on another computer, often called a server. It allows anyone to access a partcular set of data using whatever computer language on whatever operating system. In this case, this API makes it really easy to get info on Kurt Vonnegut's bibliography. All you need is a URI to get the data.
 
 `https://kurtvonnegutapi.com/api`
 

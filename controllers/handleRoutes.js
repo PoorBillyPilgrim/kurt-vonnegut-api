@@ -10,6 +10,15 @@ const getAll = async (req, res) => {
 
     // Multiple URL queries
     if (Object.keys(req.query).length > 1) {
+        // No route handling for multiple filters and different filters when used at the same time
+        const comma = /[,]/;
+        for (const x in req.query) {
+            if (req.query[x].search(comma) > -1) {
+                return res.json({
+                    message: "Sorry, can't use multiple filters and different filters at the same time!"
+                });
+            }
+        }
         return handleMultiQuery(req, res, req.query);
     }
 
