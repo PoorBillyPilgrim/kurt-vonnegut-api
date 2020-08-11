@@ -49,7 +49,7 @@
         <h3 id="about">What is an API?</h3>
         <p>The Kurt Vonnegut API is a RESTful API built using Node.js, Express, MongoDB, and EJS. It was designed to
             serve metadata on Kurt Vonnegut's bibliography, currently returning information on his novels, collected
-            works, and plays as JSON.</p>
+            works, and plays as <a href="https://www.json.org/json-en.html" target="_blank">JSON</a>.</p>
         <p>A <a href="https://restfulapi.net/" target="_blank">RESTful API</a> is simply computer code that uses
             HTTP to
             request services from
@@ -215,110 +215,265 @@
             target="_blank">GET</a>
         <p class="dark-url">https://kurtvonnegutapi.com/api?title=Slaughterhouse-Five</p>
         <pre class=""><code>[
-        {
-            _id": "5f07523011807ba43fb805b0",
-            "title": "Slaughterhouse-Five",
-            "subtitle": "The Children's Crusade: A Duty-Dance with Death",
-            "form": "novel",
-            "genre": [
-                "dark comedy",
-                "satire",
-                "science fiction",
-                "war novel",
-                "metafiction",
-                "postmodernism"
-            ],
-            "publisher": "Delacorte",
-            "year": 1969,
-            "pages": 215,
-            "chapters": 10,
-            "setting": [
-                {
-                    "city": "Dresden",
-                    "country": "Germany",
-                    "fictional": false
-                },
-                {
-                    "planet": "Tralfamadore",
-                    "fictional": true
-                },
-                {
-                    "city": "Ilium",
-                    "state": "New York",
-                    "country": "United States of America",
-                    "fictional": false
-                },
-                {
-                    "city": "Ardennes",
-                    "country": "Belgium",
-                    "fictional": false
-                }
-            ],
-            "characters": [
-                {
-                    "firstName": "Billy",
-                    "lastName": "Pilgrim"
-                },
-                {
-                    "firstName": "Kilgore",
-                    "lastName": "Trout"
-                },
-                {
-                    "firstName": "Eliot",
-                    "lastName": "Rosewater"
-                },
-                {
-                    "firstName": "Roland",
-                    "lastName": "Weary"
-                },
-                {
-                    "firstName": "Paul",
-                    "lastName": "Lazzaro"
-                },
-                {
-                    "firstName": "Edgar",
-                    "lastName": "Derby"
-                },
-                {
-                    "firstName": "Robert",
-                    "lastName": "Pilgrim"
-                },
-                {
-                    "firstName": "Valencia",
-                    "lastName": "Merble"
-                },
-                {
-                    "firstName": "Barbara",
-                    "lastName": "Pilgrim"
-                },
-                {
-                    "firstName": "Howard",
-                    "middleName": "W",
-                    "lastName": "Campbell",
-                    "suffix": "Jr"
-                },
-                {
-                    "firstName": "Montana",
-                    "lastName": "Wildhack"
-                },
-                {
-                    "firstName": "Bertam",
-                    "middleName": "Copeland",
-                    "lastName": "Rumfoord"
-                },
-                {
-                    "firstName": "Wild Bob"
-                }
-            ],
-            "wiki": "https://en.wikipedia.org/wiki/Slaughterhouse-Five"
-        }
-    ]</code></pre>
+    {
+        _id": "5f07523011807ba43fb805b0",
+        "title": "Slaughterhouse-Five",
+        "subtitle": "The Children's Crusade: A Duty-Dance with Death",
+        "form": "novel",
+        "genre": [
+            "dark comedy",
+            "satire",
+            "science fiction",
+            "war novel",
+            "metafiction",
+            "postmodernism"
+        ],
+        "publisher": "Delacorte",
+        "year": 1969,
+        "pages": 215,
+        "chapters": 10,
+        "setting": [
+            {
+                "city": "Dresden",
+                "country": "Germany",
+                "fictional": false
+            },
+            {
+                "planet": "Tralfamadore",
+                "fictional": true
+            },
+            {
+                "city": "Ilium",
+                "state": "New York",
+                "country": "United States of America",
+                "fictional": false
+            },
+            {
+                "city": "Ardennes",
+                "country": "Belgium",
+                "fictional": false
+            }
+        ],
+        "characters": [
+            {
+                "firstName": "Billy",
+                "lastName": "Pilgrim"
+            },
+            {
+                "firstName": "Kilgore",
+                "lastName": "Trout"
+            },
+            {
+                "firstName": "Eliot",
+                "lastName": "Rosewater"
+            },
+            {
+                "firstName": "Roland",
+                "lastName": "Weary"
+            },
+            {
+                "firstName": "Paul",
+                "lastName": "Lazzaro"
+            },
+            {
+                "firstName": "Edgar",
+                "lastName": "Derby"
+            },
+            {
+                "firstName": "Robert",
+                "lastName": "Pilgrim"
+            },
+            {
+                "firstName": "Valencia",
+                "lastName": "Merble"
+            },
+            {
+                "firstName": "Barbara",
+                "lastName": "Pilgrim"
+            },
+            {
+                "firstName": "Howard",
+                "middleName": "W",
+                "lastName": "Campbell",
+                "suffix": "Jr"
+            },
+            {
+                "firstName": "Montana",
+                "lastName": "Wildhack"
+            },
+            {
+                "firstName": "Bertam",
+                "middleName": "Copeland",
+                "lastName": "Rumfoord"
+            },
+            {
+                "firstName": "Wild Bob"
+            }
+        ],
+        "wiki": "https://en.wikipedia.org/wiki/Slaughterhouse-Five"
+    }
+]</code></pre>
     </div>
 
     <div class="container">
         <h3 id="usage">Usage</h3>
-    </div>
+        <p>You can use any http library to return a JSON array of the data.</p>
+        <h4>JavaScript</h4>
+        <p>Below is an example using <a href="https://github.com/request/request#readme" target="_blank">Request</a>, a
+            Node.js package.</p>
+        <pre><code>
+// Request
+const request = require('request');
+            
+request({
+    url: 'https://kurtvonnegutapi.com/api?title=Slaughterhouse-Five',
+    json: true
+}, function (error, response, bibliography) {
+    console.log(bibliography)
+});
 
+// Output
+[
+    {
+    _id: '5f07523011807ba43fb805b0',
+    title: 'Slaughterhouse-Five',
+    subtitle: "the Children's Crusade: A Duty-Dance with Death",
+    form: 'novel',
+    genre: [
+        'dark comedy',
+        'satire',
+        'science fiction',
+        'war novel',
+        'metafiction',
+        'postmodernism'
+    ],
+    publisher: 'Delacorte',
+    year: 1969,
+    pages: 215,
+    chapters: 10,
+    setting: [ [Object], [Object], [Object], [Object] ],
+    characters: [
+        [Object], [Object],
+        [Object], [Object],
+        [Object], [Object],
+        [Object], [Object],
+        [Object], [Object],
+        [Object], [Object],
+        [Object]
+    ],
+    wiki: 'https://en.wikipedia.org/wiki/Slaughterhouse-Five'
+    }
+]
+
+// Notice that arrays containing objects are returned as [Object]
+// Use object and array notation to access
+bibliography[0].characters[0]; 
+/* 
+{ 
+    firstName: 'Billy', 
+    lastName: 'Pilgrim' 
+}
+*/
+
+bibilography[0].setting[0];
+/*
+{
+    city: 'Dresden',
+    country: 'Germany',
+    fictional: false
+}
+*/</code></pre>
+        <p>Some of the metadata may be useful for textual analysis. In particular,
+            <code>bibliography[i].characters</code> and <code>bibliography[i].setting</code></p>
+        <pre><code>// Appearances of Kilgore Trout across various novels
+request({
+    url: 'https://kurtvonnegutapi.com/api/novels',
+    json: true
+}, function (error, response, bibliography) {
+    let kilgoreTroutAppearances = [];
+    for (let i = 0; i < bibliography.length; i++) {
+        for (let j = 0; j < bibliography[i].characters.length; j++) {
+            if (bibliography[i].characters[j].firstName === "Kilgore" && bibliography[i].characters[j].lastName === "Trout") {
+                kilgoreTroutAppearances.push(bibliography[i])
+            }
+        }
+    }
+    console.log(kilgoreTroutAppearances)
+});
+/*
+[
+    {
+    _id: '5f07523011807ba43fb805ab',
+    title: 'God Bless You, Mr. Rosewater',
+    subtitle: 'Pearls Before Swine',
+    form: 'novel',
+    genre: [ 'satire', 'postmodernism' ],
+    publisher: 'Holt, Rinehart and Winston',
+    year: 1965,
+    pages: 218,
+    chapters: null,
+    setting: [ [Object], [Object] ],
+    characters: [ [Object], [Object], [Object] ],
+    wiki: 'https://en.wikipedia.org/wiki/God_Bless_You,_Mr._Rosewater'
+    },
+    {
+    ...
+    }
+]
+*/</pre></code>
+        <h4>Python</h4>
+        <p><a href="https://requests.readthedocs.io/en/master/" target="_blank">Requests</a>, an HTTP library for
+            Python, gives you a simple method for returning data</p>
+        <pre><code># returns JSON array
+import requests
+
+response = requests.get('https://kurtvonnegutapi.com/api?title=Slaughterhouse-Five')
+
+print(response.json())
+
+# output
+"""
+[{'_id': '5f07523011807ba43fb805b0', 'title': 
+'Slaughterhouse-Five', 'subtitle': "the Children's
+Crusade: A Duty-Dance with Death", 'form': 'novel',
+'genre': ['dark comedy', 'satire', 'science fiction', 
+'war novel', 'metafiction', 'postmodernism'], 
+'publisher': 'Delacorte', 'year': 1969, 'pages': 215, 
+'chapters': 10, 'setting': [{'city': 'Dresden', 
+'country': 'Germany', 'fictional': False}, {'planet': 
+'Tralfamadore', 'fictional': True}, {'city': 'Ilium', 
+'state': 'New York', 'country': 'United States of 
+America', 'fictional': False}, {'city': 'Ardennes', 
+'country': 'Belgium', 'fictional': False}], 
+'characters': [{'firstName': 'Billy', 'lastName': 
+'Pilgrim'}, {'firstName': 'Kilgore', 'lastName': 
+'Trout'}, {'firstName': 'Eliot', 'lastName': 
+'Rosewater'}, {'firstName': 'Roland', 'lastName': 
+'Weary'}, {'firstName': 'Paul', 'lastName': 'Lazzaro'}
+, {'firstName': 'Edgar', 'lastName': 'Derby'}, 
+{'firstName': 'Robert', 'lastName': 'Pilgrim'}, 
+{'firstName': 'Valencia', 'lastName': 'Merble'}, 
+{'firstName': 'Barbara', 'lastName': 'Pilgrim'}, 
+{'firstName': 'Howard', 'middleName': 'W', 'lastName': 
+'Campbell', 'suffix': 'Jr'}, {'firstName': 'Montana', 
+'lastName': 'Wildhack'}, {'firstName': 'Bertam', 
+'middleName': 'Copeland', 'lastName': 'Rumfoord'}, 
+{'firstName': 'Wild Bob'}], 'wiki': 'https://en.
+wikipedia.org/wiki/Slaughterhouse-Five'}]
+"""</code></pre>
+    </div>
+    <hr>
+    <div id="footer">
+        <p class="signature">Code by <a href="http://tylerjones.info" target="_blank">Tyler Jones</a> |
+            2020
+        </p>
+        <ul class="social-media">
+            <li><a class="social-media-icon" href="https://github.com/PoorBillyPilgrim" target="_blank"
+                    rel="noopener"><i class="fab fa-github"></i></a></li>
+            <li><a class="social-media-icon" href="https://www.linkedin.com/in/tyler-jones-2a0a84143/" target="_blank"
+                    rel="noopener"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </div>
 </body>
 
 </html>
