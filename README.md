@@ -141,7 +141,7 @@ request({
 */
 ```
 ### Python
-[Requests](https://requests.readthedocs.io/en/master/), an HTTP library for Python, gives you a simle method for returning data
+[Requests](https://requests.readthedocs.io/en/master/), an HTTP library for Python, gives you a simple method for returning data
 ```python
 # returns JSON array
 import requests
