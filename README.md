@@ -54,7 +54,7 @@ request({
   {
     _id: '5f07523011807ba43fb805b0',
     title: 'Slaughterhouse-Five',
-    subtitle: "the Children's Crusade: A Duty-Dance with Death",
+    subtitle: "The Children's Crusade: A Duty-Dance with Death",
     form: 'novel',
     genre: [
       'dark comedy',
@@ -82,7 +82,7 @@ request({
   }
 ]
 
-// Notice that arrays containing objects are returned as [Object]
+// Note that arrays containing objects are returned as [Object]
 // Use object and array notation to access
 bibliography[0].characters[0]; 
 /* 
@@ -190,7 +190,7 @@ If you have any ideas or issues you would like to discuss, feel free to contact 
 When making a pull request, please clearly describe the problem and solution.
 
 ## Credits
-First time creating an API. Combed GitHub for some great inspiration. These projects were an immense help.
+First time creating an API. Combed GitHub for inspiration. These projects were an immense help.
 
 - [The Rick and Morty API](https://github.com/afuh/rick-and-morty-api)
 - [Anime Chan](https://github.com/RocktimSaikia/anime-chan)
