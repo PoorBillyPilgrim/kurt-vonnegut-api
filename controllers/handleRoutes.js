@@ -94,10 +94,12 @@ const getNovels = (req, res) => getForm(req, res, "novel");
 const getCollections = (req, res) => getForm(req, res, "collection");
 const getPlays = (req, res) => getForm(req, res, "play");
 
+const getQuotes = (req, res) => getForm(req, res, "quote");
 
 module.exports = {
     getAll,
     getNovels,
     getCollections,
-    getPlays
+    getPlays,
+    getQuotes
 };
