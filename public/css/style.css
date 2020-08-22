@@ -31,7 +31,7 @@ nav a {
 
 /** Hero **/
 h1 {
-    font-size: 12.5rem;
+    font-size: 8rem;
     
 }
 
@@ -88,7 +88,10 @@ code {
 }
 
 @media (min-width: 750px) {
-
+    /** Hero **/
+    h1 {
+        font-size: 12.5rem;
+    }
     /** Navbar **/
     nav {
         width: 100%;
